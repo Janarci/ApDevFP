@@ -68,3 +68,59 @@ System memory in use after: 77.4 MB.
 Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1969.
 Total: 2.705600 ms (FindLiveObjects: 0.197600 ms CreateObjectMapping: 0.043800 ms MarkObjects: 2.052400 ms  DeleteObjects: 0.410500 ms)
 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/NewBehaviourScript.cs
+  artifactKey: Guid(d6a9cf6749d0c2245a4d84325404732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NewBehaviourScript.cs using Guid(d6a9cf6749d0c2245a4d84325404732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105bd7cb8175ad260740cc59fdef5dd0') in 0.036162 seconds
+  Import took 0.103340 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.530 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1510 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.9 MB.
+System memory in use after: 75.5 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1973.
+Total: 3.170600 ms (FindLiveObjects: 0.210700 ms CreateObjectMapping: 0.043000 ms MarkObjects: 2.523100 ms  DeleteObjects: 0.391900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.266523 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.024426 seconds
+  Import took 0.094535 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.267 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1509 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.9 MB.
+System memory in use after: 75.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1975.
+Total: 2.979200 ms (FindLiveObjects: 0.225200 ms CreateObjectMapping: 0.044200 ms MarkObjects: 2.278200 ms  DeleteObjects: 0.429500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
