@@ -8,7 +8,7 @@ public class fairyAnim : MonoBehaviour
 
     void Start()
     {
-
+        EventBroadcaster.Instance.AddObserver(EventNames.TapEvents.ON_FAIRY_TAP, this.animDead);
         anim = GetComponent<Animation>();
         StartCoroutine(animCoroutine());
         /*
@@ -16,7 +16,12 @@ public class fairyAnim : MonoBehaviour
         {
             state.speed = 0.0F;
         }*/
+        
+    }
 
+    private void OnDestroy()
+    {
+        EventBroadcaster.Instance.RemoveObserver(EventNames.TapEvents.ON_FAIRY_TAP);
     }
 
     IEnumerator animCoroutine()
@@ -30,6 +35,12 @@ public class fairyAnim : MonoBehaviour
         StartCoroutine(animCoroutine());
     }
 
+    private void animDead()
+    {
+        anim = GetComponent<Animation>();
+        anim.Play("Death");
+        Debug.Log("Dead anime played");
+    }
 
 
 
