@@ -27,10 +27,14 @@ public class fairyAnim : MonoBehaviour
 
     IEnumerator animCoroutine()
     {
-        if (!isDead)
+        if (isDead)
+        {
+            StopCoroutine(animCoroutine());
+        }
+        else
         {
             yield return new WaitForSeconds(5);
-            this.anim.Play("Attack1");
+            this.anim.PlayQueued("Attack1", QueueMode.CompleteOthers);
             //anim.PlayQueued("Attack2", QueueMode.CompleteOthers);
             // anim.PlayQueued("Attack3", QueueMode.CompleteOthers);
             this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
