@@ -8,7 +8,6 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private GameObject fairyTemplate1;
     [SerializeField] private GameObject fairyTemplate2;
     [SerializeField] private GameObject fairyTemplate3;
-
     private float SPAWN_INTERVAL = 3.0f;
     private float INIT_TIME = 0.0f;
 
@@ -54,25 +53,26 @@ public class SpawnManager : MonoBehaviour
         //float zOffset = Random.Range(1, 3);
         Vector3 spawnPosition = this.transform.localPosition;
         spawnPosition.x = this.transform.localPosition.x + xOffset;
-
+        GameObject fairyClone;
         if (fairyType == 1)
         {
-            GameObject fairyClone1;
-            fairyClone1 = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, Quaternion.identity);
-            fairyClone1.SetActive(true);
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, this.fairyTemplate1.transform.rotation, this.transform);
+            fairyClone.SetActive(true);
         }
         else if (fairyType == 2)
         {
-            GameObject fairyClone2;
-            fairyClone2 = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, Quaternion.identity);
-            fairyClone2.SetActive(true);
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, this.fairyTemplate2.transform.rotation, this.transform);
+            fairyClone.SetActive(true);
         }
         else if (fairyType == 3)
         {
-            GameObject fairyClone3;
-            fairyClone3 = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, Quaternion.identity);
-            fairyClone3.SetActive(true);
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, this.fairyTemplate3.transform.rotation, this.transform);
+            fairyClone.SetActive(true);
         }
+        
     }
 
 }
