@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class TapReceiver : MonoBehaviour
 {
-    [SerializeField] private GameObject fairy1;
-    [SerializeField] private GameObject fairy2;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +26,6 @@ public class TapReceiver : MonoBehaviour
         if (args.HitObject != null)
         {
             Debug.Log("hit!");
-            
         }
     }
 }
