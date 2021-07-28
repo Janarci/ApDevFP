@@ -13,7 +13,9 @@ public class TapDestroy : MonoBehaviour
 
     public void destroyObj()
     {
-        EventBroadcaster.Instance.PostEvent(EventNames.TapEvents.ON_FAIRY_TAP);
+        //EventBroadcaster.Instance.PostEvent(EventNames.TapEvents.ON_FAIRY_TAP);
+        fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();
+        animation.animDead();
         StartCoroutine(destroyDelay());
     }
 }

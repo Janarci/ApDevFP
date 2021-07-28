@@ -5,11 +5,12 @@ using UnityEngine;
 public class fairyAnim : MonoBehaviour
 {
     public Animation anim;
+    private bool isDead = false;
 
     void Start()
     {
-        EventBroadcaster.Instance.AddObserver(EventNames.TapEvents.ON_FAIRY_TAP, this.animDead);
-        anim = GetComponent<Animation>();
+        //EventBroadcaster.Instance.AddObserver(EventNames.TapEvents.ON_FAIRY_TAP, this.animDead);
+        this.anim = GetComponent<Animation>();
         StartCoroutine(animCoroutine());
         /*
         foreach (AnimationState state in anim)
@@ -21,24 +22,28 @@ public class fairyAnim : MonoBehaviour
 
     private void OnDestroy()
     {
-        EventBroadcaster.Instance.RemoveObserver(EventNames.TapEvents.ON_FAIRY_TAP);
+        //EventBroadcaster.Instance.RemoveObserver(EventNames.TapEvents.ON_FAIRY_TAP);
     }
 
     IEnumerator animCoroutine()
     {
-        yield return new WaitForSeconds(5);
-        anim.Play("Attack1");
-        //anim.PlayQueued("Attack2", QueueMode.CompleteOthers);
-       // anim.PlayQueued("Attack3", QueueMode.CompleteOthers);
-        anim.PlayQueued("Idle", QueueMode.CompleteOthers);
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-        StartCoroutine(animCoroutine());
+        if (!isDead)
+        {
+            yield return new WaitForSeconds(5);
+            this.anim.Play("Attack1");
+            //anim.PlayQueued("Attack2", QueueMode.CompleteOthers);
+            // anim.PlayQueued("Attack3", QueueMode.CompleteOthers);
+            this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
+            Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+            StartCoroutine(animCoroutine());
+        }
     }
 
-    private void animDead()
+    public void animDead()
     {
-        anim = GetComponent<Animation>();
-        anim.Play("Death");
+        this.isDead = true;
+        this.anim = GetComponent<Animation>();
+        this.anim.Play("Death");
         Debug.Log("Dead anime played");
         
     }
