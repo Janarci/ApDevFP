@@ -40,6 +40,7 @@ public class fairyAnim : MonoBehaviour
         anim = GetComponent<Animation>();
         anim.Play("Death");
         Debug.Log("Dead anime played");
+        
     }
 
 
