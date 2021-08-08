@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class TapDestroy : MonoBehaviour
 {
+    [SerializeField] private int fairyType;
+    //[SerializeField] private GameObject SpellManager;
+    [SerializeField] private SpellHandler Spellhandler;
 
-    IEnumerator destroyDelay()
+
+    private int currentSpell = 0;
+	private void Awake()
+	{
+        //Spellhandler = SpellManager.GetComponent<SpellHandler>();
+	}
+	IEnumerator destroyDelay()
     {
         yield return new WaitForSeconds(2.5f);
         Destroy(this.gameObject);
@@ -13,9 +22,14 @@ public class TapDestroy : MonoBehaviour
 
     public void destroyObj()
     {
-        //EventBroadcaster.Instance.PostEvent(EventNames.TapEvents.ON_FAIRY_TAP);
-        fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();
-        animation.animDead();
-        StartCoroutine(destroyDelay());
+        currentSpell = Spellhandler.currentSpell();
+        Spellhandler.SpellUse();
+        if (currentSpell == fairyType)
+        {
+            
+            fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();
+            animation.animDead();
+            StartCoroutine(destroyDelay());
+        }
     }
 }

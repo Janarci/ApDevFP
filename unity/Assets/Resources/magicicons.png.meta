@@ -1,0 +1,1563 @@
+fileFormatVersion: 2
+guid: c7e699c69c50bef448d30426d0c4992a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3360605755835578476
+    second: magicicons_0
+  - first:
+      213: -1636742009938608792
+    second: magicicons_1
+  - first:
+      213: 4894503297020535576
+    second: magicicons_2
+  - first:
+      213: 452449923478228066
+    second: magicicons_3
+  - first:
+      213: 1172337225970943958
+    second: magicicons_4
+  - first:
+      213: 2268046171142045498
+    second: magicicons_5
+  - first:
+      213: 5117178054174178499
+    second: magicicons_6
+  - first:
+      213: -799456379296477578
+    second: magicicons_7
+  - first:
+      213: -1931264879148296782
+    second: magicicons_8
+  - first:
+      213: -5291696226865347966
+    second: magicicons_9
+  - first:
+      213: -1719544449181028933
+    second: magicicons_10
+  - first:
+      213: 3499144181262065939
+    second: magicicons_11
+  - first:
+      213: 5009905267504198013
+    second: magicicons_12
+  - first:
+      213: -5512987352564377527
+    second: magicicons_13
+  - first:
+      213: -5251144013649010628
+    second: magicicons_14
+  - first:
+      213: 8151745539084921268
+    second: magicicons_15
+  - first:
+      213: 9038722370204788208
+    second: magicicons_16
+  - first:
+      213: -6307192972065056902
+    second: magicicons_17
+  - first:
+      213: 1496937322057176999
+    second: magicicons_18
+  - first:
+      213: 8149886449850402509
+    second: magicicons_19
+  - first:
+      213: -6109863103726367109
+    second: magicicons_20
+  - first:
+      213: -8919751398972608121
+    second: magicicons_21
+  - first:
+      213: 2994578985466089648
+    second: magicicons_22
+  - first:
+      213: 3479635591432090396
+    second: magicicons_23
+  - first:
+      213: 7600498205236103646
+    second: magicicons_24
+  - first:
+      213: -2447593928078827461
+    second: magicicons_25
+  - first:
+      213: 9116348137561911171
+    second: magicicons_26
+  - first:
+      213: 7249195885237473059
+    second: magicicons_27
+  - first:
+      213: 8931228040977909310
+    second: magicicons_28
+  - first:
+      213: 2376849945498428074
+    second: magicicons_29
+  - first:
+      213: -3930251490375797931
+    second: magicicons_30
+  - first:
+      213: -5304900306343900050
+    second: magicicons_31
+  - first:
+      213: 8366492930270143727
+    second: magicicons_32
+  - first:
+      213: -3066202531453528308
+    second: magicicons_33
+  - first:
+      213: 6641047876069237051
+    second: magicicons_34
+  - first:
+      213: 4618418508585986175
+    second: magicicons_35
+  - first:
+      213: 4925213837470441700
+    second: magicicons_36
+  - first:
+      213: 276459785961795117
+    second: magicicons_37
+  - first:
+      213: -4147597165937273742
+    second: magicicons_38
+  - first:
+      213: -6331279504614907181
+    second: magicicons_39
+  - first:
+      213: -2762706271347813324
+    second: magicicons_40
+  - first:
+      213: -6440050250927135102
+    second: magicicons_41
+  - first:
+      213: -4790123843729745444
+    second: magicicons_42
+  - first:
+      213: 4686595512685524971
+    second: magicicons_43
+  - first:
+      213: 6013976621570384035
+    second: magicicons_44
+  - first:
+      213: 507559374467436101
+    second: magicicons_45
+  - first:
+      213: 9129171880482719815
+    second: magicicons_46
+  - first:
+      213: -8588249913654777830
+    second: magicicons_47
+  - first:
+      213: 803276968800783991
+    second: magicicons_48
+  - first:
+      213: -6882018062312052723
+    second: magicicons_49
+  - first:
+      213: -7686078745732729966
+    second: magicicons_50
+  - first:
+      213: -1148518790833164990
+    second: magicicons_51
+  - first:
+      213: -2444194811536289366
+    second: magicicons_52
+  - first:
+      213: 921056162422908317
+    second: magicicons_53
+  - first:
+      213: -121267649305958680
+    second: magicicons_54
+  - first:
+      213: 7736522042236364584
+    second: magicicons_55
+  - first:
+      213: -5317365151719324503
+    second: magicicons_56
+  - first:
+      213: -1198428837491895045
+    second: magicicons_57
+  - first:
+      213: 7692235260354156442
+    second: magicicons_58
+  - first:
+      213: 8880227077277814580
+    second: magicicons_59
+  - first:
+      213: -2071239568147439793
+    second: magicicons_60
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magicicons_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3329
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497894dcedabc51d0800000000000000
+      internalID: -3360605755835578476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 3325
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d76a450df1949e0800000000000000
+      internalID: -1636742009938608792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_2
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 3333
+        width: 502
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81323e201d4cce340800000000000000
+      internalID: 4894503297020535576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_3
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 3329
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c8297eecc674600800000000000000
+      internalID: 452449923478228066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_4
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 3296
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d707f6ee7af44010800000000000000
+      internalID: 1172337225970943958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_5
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 3280
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f3b1dd9f7b97f10800000000000000
+      internalID: 2268046171142045498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_6
+      rect:
+        serializedVersion: 2
+        x: 4093
+        y: 3333
+        width: 502
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccf97b045ed30740800000000000000
+      internalID: 5117178054174178499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_7
+      rect:
+        serializedVersion: 2
+        x: 4681
+        y: 3329
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e0d92a8a2c7e4f0800000000000000
+      internalID: -799456379296477578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_8
+      rect:
+        serializedVersion: 2
+        x: 5285
+        y: 3337
+        width: 502
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b59d2f13d4c235e0800000000000000
+      internalID: -1931264879148296782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_9
+      rect:
+        serializedVersion: 2
+        x: 5918
+        y: 3334
+        width: 503
+        height: 499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2828a6a715e1096b0800000000000000
+      internalID: -5291696226865347966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_10
+      rect:
+        serializedVersion: 2
+        x: 6486
+        y: 3300
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbde11b1f63f228e0800000000000000
+      internalID: -1719544449181028933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_11
+      rect:
+        serializedVersion: 2
+        x: 7050
+        y: 3284
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3112006f7157f8030800000000000000
+      internalID: 3499144181262065939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2639
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7132f31c42c68540800000000000000
+      internalID: 5009905267504198013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_13
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2635
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948dd2f363fed73b0800000000000000
+      internalID: -5512987352564377527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_14
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 2643
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30280267503027b0800000000000000
+      internalID: -5251144013649010628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_15
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 2639
+        width: 501
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b92884c061d02170800000000000000
+      internalID: 8151745539084921268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_16
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 2606
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5ee634b1eff6d70800000000000000
+      internalID: 9038722370204788208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_17
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 2590
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77d83aa8695878a0800000000000000
+      internalID: -6307192972065056902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_18
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 2648
+        width: 502
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a71e34309036c410800000000000000
+      internalID: 1496937322057176999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_19
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 2647
+        width: 503
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc64a13db863a1170800000000000000
+      internalID: 8149886449850402509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_20
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 2652
+        width: 503
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ecf1ce0e7653ba0800000000000000
+      internalID: -6109863103726367109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_21
+      rect:
+        serializedVersion: 2
+        x: 5869
+        y: 2651
+        width: 503
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781b17b8c5da63480800000000000000
+      internalID: -8919751398972608121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_22
+      rect:
+        serializedVersion: 2
+        x: 6438
+        y: 2619
+        width: 505
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b05e88a8b1ee8920800000000000000
+      internalID: 2994578985466089648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_23
+      rect:
+        serializedVersion: 2
+        x: 7004
+        y: 2602
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13bd1f62262a4030800000000000000
+      internalID: 3479635591432090396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2035
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9871739d46a7960800000000000000
+      internalID: 7600498205236103646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_25
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2035
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3065725a46680ed0800000000000000
+      internalID: -2447593928078827461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_26
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 2039
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38feb24a456c38e70800000000000000
+      internalID: 9116348137561911171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_27
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 2039
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f8dceef315a9460800000000000000
+      internalID: 7249195885237473059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_28
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 2002
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e360f76659812fb70800000000000000
+      internalID: 8931228040977909310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_29
+      rect:
+        serializedVersion: 2
+        x: 2974
+        y: 1990
+        width: 503
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa227ddae644cf020800000000000000
+      internalID: 2376849945498428074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_30
+      rect:
+        serializedVersion: 2
+        x: 4040
+        y: 2019
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5537336c711f479c0800000000000000
+      internalID: -3930251490375797931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_31
+      rect:
+        serializedVersion: 2
+        x: 4630
+        y: 2019
+        width: 503
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cc28727453166b0800000000000000
+      internalID: -5304900306343900050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_32
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 2023
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4a1941ef0cb1470800000000000000
+      internalID: 8366492930270143727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_33
+      rect:
+        serializedVersion: 2
+        x: 5865
+        y: 2023
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c071f470b09a275d0800000000000000
+      internalID: -3066202531453528308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_34
+      rect:
+        serializedVersion: 2
+        x: 6435
+        y: 1986
+        width: 503
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3128758bddb92c50800000000000000
+      internalID: 6641047876069237051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_35
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 1974
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f786b540a2be71040800000000000000
+      internalID: 4618418508585986175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1443
+        width: 496
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0a349e3efd95440800000000000000
+      internalID: 4925213837470441700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_37
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1439
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2eeee8e5be26d300800000000000000
+      internalID: 276459785961795117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_38
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1449
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27454ec3a56c076c0800000000000000
+      internalID: -4147597165937273742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_39
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1443
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2a7b9c5d6c228a0800000000000000
+      internalID: -6331279504614907181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_40
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 1410
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434d19d9845e8a9d0800000000000000
+      internalID: -2762706271347813324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_41
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 1394
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286a2d9ea6850a6a0800000000000000
+      internalID: -6440050250927135102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_42
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 77
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd91c584ebf068db0800000000000000
+      internalID: -4790123843729745444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_43
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 715
+        width: 502
+        height: 499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be77f83c9c12a0140800000000000000
+      internalID: 4686595512685524971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_44
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 1349
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0e438bfdfe57350800000000000000
+      internalID: 6013976621570384035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_45
+      rect:
+        serializedVersion: 2
+        x: 4575
+        y: 712
+        width: 501
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e0d89df863b0700800000000000000
+      internalID: 507559374467436101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_46
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 88
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74848a5f47551be70800000000000000
+      internalID: 9129171880482719815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_47
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1345
+        width: 501
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18e35eb43860d880800000000000000
+      internalID: -8588249913654777830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_48
+      rect:
+        serializedVersion: 2
+        x: 5175
+        y: 718
+        width: 502
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e8f9da520d52b00800000000000000
+      internalID: 803276968800783991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_49
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 89
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08611ae8092e70a0800000000000000
+      internalID: -6882018062312052723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_50
+      rect:
+        serializedVersion: 2
+        x: 5208
+        y: 1353
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293bbe47a10955590800000000000000
+      internalID: -7686078745732729966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_51
+      rect:
+        serializedVersion: 2
+        x: 5810
+        y: 717
+        width: 500
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d278eae34af00f0800000000000000
+      internalID: -1148518790833164990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_52
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 89
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1d680d4c9741ed0800000000000000
+      internalID: -2444194811536289366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_53
+      rect:
+        serializedVersion: 2
+        x: 5841
+        y: 1350
+        width: 502
+        height: 503
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95e66323bf38cc00800000000000000
+      internalID: 921056162422908317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_54
+      rect:
+        serializedVersion: 2
+        x: 6380
+        y: 684
+        width: 501
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e62f5827bb215ef0800000000000000
+      internalID: -121267649305958680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_55
+      rect:
+        serializedVersion: 2
+        x: 6404
+        y: 59
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8276a7cbec5ad5b60800000000000000
+      internalID: 7736522042236364584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_56
+      rect:
+        serializedVersion: 2
+        x: 6412
+        y: 1317
+        width: 502
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a48abe219ce436b0800000000000000
+      internalID: -5317365151719324503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_57
+      rect:
+        serializedVersion: 2
+        x: 6943
+        y: 668
+        width: 502
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf416b462535e5fe0800000000000000
+      internalID: -1198428837491895045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_58
+      rect:
+        serializedVersion: 2
+        x: 6968
+        y: 43
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97d42ec63f40ca60800000000000000
+      internalID: 7692235260354156442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magicicons_59
+      rect:
+        serializedVersion: 2
+        x: 6976
+        y: 1301
+        width: 502
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f03f13a77ec3b70800000000000000
+      internalID: 8880227077277814580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5aa4f407f86259447b243ee762a76512
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

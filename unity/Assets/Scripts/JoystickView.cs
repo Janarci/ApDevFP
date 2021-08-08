@@ -5,10 +5,9 @@ using UnityEngine;
 public class JoystickView : MonoBehaviour
 {
     public Joystick joystick;
-    private Quaternion m_CharacterTargetRot;
-    private Quaternion m_CameraTargetRot;
+    public Transform playerBody;
     public Camera m_Camera;
-
+    float xRotation = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,13 @@ public class JoystickView : MonoBehaviour
         float yRot = joystick.Vertical;
         float xRot = joystick.Horizontal;
 
-        m_Camera.transform.localEulerAngles += new Vector3(-yRot, xRot, 0);
+        xRotation -= yRot;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+
+        transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
+        playerBody.Rotate(Vector3.up * xRot);
+       // m_Camera.transform.localEulerAngles += new Vector3(-yRot, xRot, 0);
 
 
 
