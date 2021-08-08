@@ -38,7 +38,7 @@ public class fairyAnim : MonoBehaviour
             //anim.PlayQueued("Attack2", QueueMode.CompleteOthers);
             // anim.PlayQueued("Attack3", QueueMode.CompleteOthers);
             this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
-            Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+            //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
             StartCoroutine(animCoroutine());
         }
     }
