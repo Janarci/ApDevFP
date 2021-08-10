@@ -5216,7 +5216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fairyType: 0
-  SpellManager: {fileID: 0}
+  Spellhandler: {fileID: 0}
 --- !u!114 &749370942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7206,7 +7206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fairyType: 0
-  SpellManager: {fileID: 0}
+  Spellhandler: {fileID: 0}
 --- !u!136 &1043090510
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7626,7 +7626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fairyType: 0
-  SpellManager: {fileID: 0}
+  Spellhandler: {fileID: 0}
 --- !u!114 &1130039867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11495,6 +11495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccc2b9a2f103a04ebfb2734820b18d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mana: {fileID: 1782084353}
 --- !u!4 &1513199233
 Transform:
   m_ObjectHideFlags: 0
@@ -12934,8 +12935,9 @@ GameObject:
   - component: {fileID: 1782084352}
   - component: {fileID: 1782084351}
   - component: {fileID: 1782084350}
+  - component: {fileID: 1782084353}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ManaBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13007,7 +13009,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 100
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13050,6 +13052,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782084348}
   m_CullTransparentMesh: 1
+--- !u!114 &1782084353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782084348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913a83f7ae5646245957f3cad2fe3397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1782084350}
 --- !u!4 &1804531380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1279437348525638701, guid: e2e682b966e3f644392ffbfab511e0e2, type: 3}
@@ -15389,6 +15404,10 @@ PrefabInstance:
       propertyPath: SpellManager
       value: 
       objectReference: {fileID: 1513199231}
+    - target: {fileID: 836985913345636860, guid: a806a2667a0950749a2f750eaa440cf1, type: 3}
+      propertyPath: Spellhandler
+      value: 
+      objectReference: {fileID: 1513199232}
     - target: {fileID: 4980662579052213079, guid: a806a2667a0950749a2f750eaa440cf1, type: 3}
       propertyPath: target
       value: 
@@ -15535,6 +15554,10 @@ PrefabInstance:
       propertyPath: SpellManager
       value: 
       objectReference: {fileID: 1513199231}
+    - target: {fileID: 4459689784754598510, guid: 446b271da970848479f55a6a23aa5324, type: 3}
+      propertyPath: Spellhandler
+      value: 
+      objectReference: {fileID: 1513199232}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446b271da970848479f55a6a23aa5324, type: 3}
 --- !u!1001 &7894064650450297820
@@ -15608,5 +15631,9 @@ PrefabInstance:
       propertyPath: SpellManager
       value: 
       objectReference: {fileID: 1513199231}
+    - target: {fileID: 7894064651303107118, guid: b8bdd57083bf0614083d9bd6e6367fce, type: 3}
+      propertyPath: Spellhandler
+      value: 
+      objectReference: {fileID: 1513199232}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8bdd57083bf0614083d9bd6e6367fce, type: 3}

@@ -17,7 +17,7 @@ public class TapDestroy : MonoBehaviour
 	IEnumerator destroyDelay()
     {
         yield return new WaitForSeconds(2.5f);
-        Destroy(this.gameObject);
+        
     }
 
     public void destroyObj()
@@ -29,7 +29,8 @@ public class TapDestroy : MonoBehaviour
             
             fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();
             animation.animDead();
-            StartCoroutine(destroyDelay());
+            Destroy(this.gameObject, 2.5f);
+            //StartCoroutine(destroyDelay());
         }
     }
 }
