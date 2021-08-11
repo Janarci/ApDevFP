@@ -15,19 +15,14 @@ public class TapDestroy : MonoBehaviour
 	{
         //Spellhandler = SpellManager.GetComponent<SpellHandler>();
 	}
-	IEnumerator destroyDelay()
-    {
-        yield return new WaitForSeconds(2.5f);
-        
-    }
-
     public void destroyObj()
     {
         currentSpell = Spellhandler.currentSpell();
-        Spellhandler.SpellUse();
+
         //add mana check
         if (currentSpell == fairyType && !killed)
         {
+            Spellhandler.SpellUse();
             killed = true;
             coin.getCoin();
             fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();

@@ -36,7 +36,7 @@ public class fairyAnim : MonoBehaviour
 
 	private void Update()
 	{
-        if (canInteract(player, interactionTransform) && !reachAgent)
+        if (canInteract(player, interactionTransform) && !reachAgent && !isDead)
         {
             reachAgent = true;
             agent.Stop();
@@ -58,10 +58,10 @@ public class fairyAnim : MonoBehaviour
         this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
         // gameObject.SetActive(false);
         yield return new WaitForSeconds(3f);
-        this.anim.Play("Attack1");
-        
-
-        StartCoroutine(attackCycle());
+        if (!isDead) {
+            this.anim.Play("Attack1");
+            StartCoroutine(attackCycle());
+        }
     }
     IEnumerator animCoroutine()
     {
@@ -84,6 +84,7 @@ public class fairyAnim : MonoBehaviour
         agent.Stop();
         this.isDead = true;
         this.anim.Play("Death");
+        StopAllCoroutines();
         Debug.Log("Dead anime played");
         
     }

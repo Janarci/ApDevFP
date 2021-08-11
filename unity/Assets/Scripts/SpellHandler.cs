@@ -15,8 +15,9 @@ public class SpellHandler : MonoBehaviour
     [Header("TestText")]
     [Tooltip("hover tooltip")]*/
     public ManaScript mana;
+    public sfxHandler sfx;
 
-	void Start()
+    void Start()
     {
         currentMana = manaMax;
         mana.setManaMax(manaMax);
@@ -35,15 +36,19 @@ public class SpellHandler : MonoBehaviour
 	public void fireSpell()
     {
         spellType = 1;
-
+        sfx.setCurrentSound("Fire");
     }
     public void elecSpell()
     {
         spellType = 2;
+        sfx.setCurrentSound("Electric");
+
     }
     public void waterSpell()
     {
         spellType = 3;
+        sfx.setCurrentSound("Water");
+
     }
 
 
