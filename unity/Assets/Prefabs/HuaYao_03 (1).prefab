@@ -1415,7 +1415,6 @@ GameObject:
   - component: {fileID: 7894064651303107112}
   - component: {fileID: 7894064651303107119}
   - component: {fileID: 7894064651303107118}
-  - component: {fileID: 7894064651303107108}
   - component: {fileID: 7894064651303107109}
   m_Layer: 0
   m_Name: HuaYao_03 (1)
@@ -1509,6 +1508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 7894064651303107113}
+  target: {fileID: 0}
 --- !u!114 &7894064651303107118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,19 +1521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09212cabb72f11149a3b89ac47fc9369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7894064651303107108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7894064651303107117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7551cee60a19640a46dd76619be1cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  fairyType: 0
+  Spellhandler: {fileID: 0}
 --- !u!195 &7894064651303107109
 NavMeshAgent:
   m_ObjectHideFlags: 0

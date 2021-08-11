@@ -10,17 +10,17 @@ public class SpellHandler : MonoBehaviour
 	private float manaMax = 100;
     private float currentMana = 0;
     private float spellcost = 20;
-    [Range(0f, 10f)]
+    /*[Range(0f, 10f)]
     [Space]
     [Header("TestText")]
-    [Tooltip("hover tooltip")]
+    [Tooltip("hover tooltip")]*/
     public ManaScript mana;
 
 	void Start()
     {
         currentMana = manaMax;
         mana.setManaMax(manaMax);
-        bool TorF = (Random.value > 0.5f);
+        //bool TruorFal = (Random.value > 0.5f);
         //change editor color when game run
     }
 	private void Update()

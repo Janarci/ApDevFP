@@ -1,15 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class fairyAnim : MonoBehaviour
 {
-    public Animation anim;
+    [SerializeField] private Animation anim;
     private bool isDead = false;
+    [SerializeField] private Transform target;
+    [SerializeField] private Transform player;
+    Transform interactionTransform;
+    private NavMeshAgent agent;
+    public float attackRadius = 3f;
+    [SerializeField] private HealthHandler damage;
+
+
+
 
     void Start()
     {
-        //EventBroadcaster.Instance.AddObserver(EventNames.TapEvents.ON_FAIRY_TAP, this.animDead);
+        interactionTransform = this.gameObject.transform;
+        agent = this.GetComponent<NavMeshAgent>();
+        destination();
         this.anim = GetComponent<Animation>();
         StartCoroutine(animCoroutine());
         /*
@@ -20,7 +32,16 @@ public class fairyAnim : MonoBehaviour
         
     }
 
-    private void OnDestroy()
+	private void Update()
+	{
+        if (canInteract(player, interactionTransform))
+        {
+            damage.getHit();
+            gameObject.SetActive(false);
+        }
+    }
+
+	private void OnDestroy()
     {
         //EventBroadcaster.Instance.RemoveObserver(EventNames.TapEvents.ON_FAIRY_TAP);
     }
@@ -52,7 +73,28 @@ public class fairyAnim : MonoBehaviour
         
     }
 
+    private void destination()
+    {
+        Vector3 TargetVec = target.transform.position;
+        agent.SetDestination(TargetVec);
+    }
 
+    public bool canInteract(Transform playerPos, Transform objectPos)
+    {
+        float distance = Vector3.Distance(playerPos.position, objectPos.position);
+        if (distance < attackRadius)
+        {
+            Debug.Log("Can Interact with this object!");
+            return true;
+        }
+        else
+            return false;
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(interactionTransform.position, attackRadius);
+    }
 
 
 }
