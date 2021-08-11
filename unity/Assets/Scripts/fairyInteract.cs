@@ -19,8 +19,8 @@ public class fairyInteract : MonoBehaviour
 
     public void onFairyClick()
     {
-        Debug.Log("lmao");
-        EventBroadcaster.Instance.PostEvent(EventNames.TapEvents.ON_FAIRY_TAP);
+       // Debug.Log("lmao");
+        //EventBroadcaster.Instance.PostEvent(EventNames.TapEvents.ON_FAIRY_TAP);
     }
 
 }
