@@ -6,13 +6,14 @@ using UnityEngine.AI;
 public class fairyAnim : MonoBehaviour
 {
     [SerializeField] private Animation anim;
-    private bool isDead = false;
+    [SerializeField] private HealthHandler damage;
     [SerializeField] private Transform target;
     [SerializeField] private Transform player;
+    private bool reachAgent = false;
+    private bool isDead = false;
     Transform interactionTransform;
     private NavMeshAgent agent;
     public float attackRadius = 3f;
-    [SerializeField] private HealthHandler damage;
 
 
 
@@ -23,21 +24,27 @@ public class fairyAnim : MonoBehaviour
         agent = this.GetComponent<NavMeshAgent>();
         destination();
         this.anim = GetComponent<Animation>();
-        StartCoroutine(animCoroutine());
+        anim.Play("Run");
+        //StartCoroutine(animCoroutine());
         /*
         foreach (AnimationState state in anim)
         {
             state.speed = 0.0F;
         }*/
-        
+
     }
 
 	private void Update()
 	{
-        if (canInteract(player, interactionTransform))
+        if (canInteract(player, interactionTransform) && !reachAgent)
         {
-            damage.getHit();
-            gameObject.SetActive(false);
+            reachAgent = true;
+            agent.Stop();
+
+            this.anim.Play("Attack1");
+            StartCoroutine(attackCycle());
+            
+            
         }
     }
 
@@ -46,6 +53,16 @@ public class fairyAnim : MonoBehaviour
         //EventBroadcaster.Instance.RemoveObserver(EventNames.TapEvents.ON_FAIRY_TAP);
     }
 
+    IEnumerator attackCycle()
+    {
+        this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
+        // gameObject.SetActive(false);
+        yield return new WaitForSeconds(3f);
+        this.anim.Play("Attack1");
+        
+
+        StartCoroutine(attackCycle());
+    }
     IEnumerator animCoroutine()
     {
         if (isDead)
@@ -56,8 +73,6 @@ public class fairyAnim : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
             this.anim.PlayQueued("Attack1", QueueMode.CompleteOthers);
-            //anim.PlayQueued("Attack2", QueueMode.CompleteOthers);
-            // anim.PlayQueued("Attack3", QueueMode.CompleteOthers);
             this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
             //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
             StartCoroutine(animCoroutine());
@@ -66,8 +81,8 @@ public class fairyAnim : MonoBehaviour
 
     public void animDead()
     {
+        agent.Stop();
         this.isDead = true;
-        this.anim = GetComponent<Animation>();
         this.anim.Play("Death");
         Debug.Log("Dead anime played");
         
@@ -89,6 +104,10 @@ public class fairyAnim : MonoBehaviour
         }
         else
             return false;
+    }
+    public void damagePlayer()
+    {
+        damage.getHit();
     }
     void OnDrawGizmosSelected()
     {

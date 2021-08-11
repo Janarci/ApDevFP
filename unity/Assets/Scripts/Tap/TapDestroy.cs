@@ -25,6 +25,7 @@ public class TapDestroy : MonoBehaviour
     {
         currentSpell = Spellhandler.currentSpell();
         Spellhandler.SpellUse();
+        //add mana check
         if (currentSpell == fairyType && !killed)
         {
             killed = true;
