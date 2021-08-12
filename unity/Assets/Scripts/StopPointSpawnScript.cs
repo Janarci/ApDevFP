@@ -12,7 +12,8 @@ public class StopPointSpawnScript : MonoBehaviour
     [SerializeField] private ShopUIBehavior ShopManager;
     [SerializeField] private CampUIBehavior CampManager;
     [SerializeField] private GameObject spawnHandler;
-    //[SerializeField] private SpawnManager spawnManager;
+    [SerializeField] private CoinHandler coinHandler;
+    
 
     private bool triggerOnce = false;
 
@@ -35,8 +36,11 @@ public class StopPointSpawnScript : MonoBehaviour
                 triggerOnce = true;
 
                 //START SPAWN MOBS HERE
-                spawnHandler.SetActive(true);
-                //spawnManager.roundStart = true;
+                if (pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.SHOP 
+                    && pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.CAMP)
+                {
+                    spawnHandler.SetActive(true);
+                }
             }
         }
     }
@@ -60,9 +64,11 @@ public class StopPointSpawnScript : MonoBehaviour
                 {
                     pathingManager.playerStop = false;
                     Destroy(Blockings);
+                    Destroy(spawnHandler);
+                    coinHandler.getPathCompleteCoin(530);
                     Destroy(this);
-                    spawnHandler.SetActive(false);
-                    //spawnManager.roundStart = false;
+                    
+                    
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.MINI)
@@ -71,9 +77,11 @@ public class StopPointSpawnScript : MonoBehaviour
                 {
                     pathingManager.playerStop = false;
                     Destroy(Blockings);
+                    Destroy(spawnHandler);
+                    coinHandler.getPathCompleteCoin(350);
                     Destroy(this);
-                    spawnHandler.SetActive(false);
-                    //spawnManager.roundStart = false;
+                    
+
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.BOSS)
@@ -82,9 +90,11 @@ public class StopPointSpawnScript : MonoBehaviour
                 {
                     pathingManager.playerStop = false;
                     Destroy(Blockings);
+                    Destroy(spawnHandler);
+
                     Destroy(this);
-                    spawnHandler.SetActive(false);
-                    //spawnManager.roundStart = false;
+                    
+
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.SHOP)

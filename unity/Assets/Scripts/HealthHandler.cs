@@ -48,7 +48,6 @@ public class HealthHandler : MonoBehaviour
 
     public void increaseMaxHealth()
     {
-        //increase health here
-        //call sethealthmax
+        healthMax += 80;
     }
 }

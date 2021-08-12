@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CoinHandler : MonoBehaviour
 {
-    private float coinTotal = 0;
+    private int coinTotal = 0;
     [SerializeField] private Text text;
 
 
@@ -18,11 +18,26 @@ public class CoinHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = coinTotal.ToString();
+        text.text = $"Gold: {coinTotal}";
     }
 
     public void getCoin()
     {
-        coinTotal += Random.Range(1,6);
+        coinTotal += Random.Range(2,6) * 10;
+    }
+
+    public void getPathCompleteCoin(int value)
+    {
+        coinTotal += value;
+    }
+
+    public int getGoldTotal()
+    {
+        return coinTotal;
+    }
+
+    public void setGoldTotal(int value)
+    {
+        coinTotal = value;
     }
 }

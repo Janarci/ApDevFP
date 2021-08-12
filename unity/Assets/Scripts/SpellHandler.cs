@@ -11,10 +11,12 @@ public class SpellHandler : MonoBehaviour
     private float currentMana = 0;
     private float spellcost = 20;
     private float manaRegen = 5.0f;
+    public float manaPotionAmount = 0;
     /*[Range(0f, 10f)]
     [Space]
     [Header("TestText")]
     [Tooltip("hover tooltip")]*/
+    public Text ManaPotionDisplay;
     public ManaScript mana;
     public sfxHandler sfx;
     private CheatScript cheats;
@@ -54,6 +56,18 @@ public class SpellHandler : MonoBehaviour
 
     }
 
+    public void useManaPotion()
+    {
+        if (manaPotionAmount > 0)
+        {
+            currentMana = manaMax;
+            manaPotionAmount--;
+            ManaPotionDisplay.text = $"{manaPotionAmount}";
+            //gulpsound i suppose
+            //sfx.setCurrentSound("Water");
+        }
+    }
+
 
     public int currentSpell()
     {
@@ -75,13 +89,17 @@ public class SpellHandler : MonoBehaviour
 
     public void increaseMaxMana()
     {
-        //setmanamax call
-        //for future max mana increase through shop
+        manaMax += 60;
     }
 
     public void increaseManaRegen()
     {
-        //for future mana regen increase through shop
+        manaRegen += 1.2f;
+    }
+
+    public void addManaPotion()
+    {
+        manaPotionAmount += 1;
     }
 
     public void lowerSpellCost()

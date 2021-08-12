@@ -34,7 +34,7 @@ public class CampUIBehavior : MonoBehaviour
         InitUI.SetActive(true);
         BlackScreen.GetComponent<Animator>().Play("Blackscreen");
         //heal all health
-        //yield return new WaitForSeconds(2f);
+
         BlackScreen.GetComponent<Animator>().StopPlayback();
         InitUI.SetActive(false);
         AfterRest.SetActive(true);
