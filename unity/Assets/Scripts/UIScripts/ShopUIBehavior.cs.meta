@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f4430464b4094914bb04c2c30bf9c709
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MainShop: {fileID: 639643273257482550, guid: 54befe42609015240af7be019be24fb8, type: 3}
+  - CostingShop: {fileID: 7857474420031141584, guid: eaae8aa13da4d254d928d6f3f02ad9c3, type: 3}
+  - EncounteredShop: {fileID: 9184913472984592830, guid: 16600d1014923d64c8bc7e1c8058f56c, type: 3}
+  - Cost: {instanceID: 0}
+  - Owned: {instanceID: 0}
+  - BuyingAmount: {instanceID: 0}
+  - DragonHam: {instanceID: 0}
+  - FairyFungus: {instanceID: 0}
+  - ManaPotion: {instanceID: 0}
+  - Carrot: {instanceID: 0}
+  - Bomb: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
