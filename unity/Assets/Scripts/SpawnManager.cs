@@ -11,6 +11,8 @@ public class SpawnManager : MonoBehaviour
     private float SPAWN_INTERVAL = 3.0f;
     private float INIT_TIME = 0.0f;
 
+    //public bool roundStart = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,27 +24,29 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (roundStart)
+        //{
+            INIT_TIME += Time.deltaTime;
 
-        INIT_TIME += Time.deltaTime;
+            if (stage == 1)
+            {
+                SPAWN_INTERVAL = 3.3f;
+            }
+            if (stage == 2)
+            {
+                SPAWN_INTERVAL = 2.5f;
+            }
+            if (stage == 3)
+            {
+                SPAWN_INTERVAL = 1.5f;
+            }
 
-        if (stage == 1)
-        {
-            SPAWN_INTERVAL = 6.0f;
-        }
-        if (stage == 2)
-        {
-            SPAWN_INTERVAL = 3.5f;
-        }
-        if (stage == 3)
-        {
-            SPAWN_INTERVAL = 1.5f;
-        }
-
-        if (INIT_TIME >= SPAWN_INTERVAL)
-        {
-            INIT_TIME = 0.0f;
-            spawnFairy();
-        }
+            if (INIT_TIME >= SPAWN_INTERVAL)
+            {
+                INIT_TIME = 0.0f;
+                spawnFairy();
+            }
+        //}
     }
 
     public void destroyAllFairy()
@@ -72,8 +76,8 @@ public class SpawnManager : MonoBehaviour
         float xOffset = Random.Range(-3.0f, 3.0f);
         //float yOffset = Random.Range(1, 3);
         //float zOffset = Random.Range(1, 3);
-        Vector3 spawnPosition = this.transform.localPosition;
-        spawnPosition.x = this.transform.localPosition.x + xOffset;
+        Vector3 spawnPosition = this.transform.position;
+        spawnPosition.x = this.transform.position.x + xOffset;
         GameObject fairyClone;
         if (fairyType == 1)
         {
