@@ -9,10 +9,15 @@ public class StopPointSpawnScript : MonoBehaviour
 
     [SerializeField] private PathingScript pathingManager;
 
+    [SerializeField] private ShopUIBehavior ShopManager;
+    [SerializeField] private CampUIBehavior CampManager;
+
     private bool triggerOnce = false;
 
-    private float BLOCKED_TIME = 45.0f;
-    private float MINI_TIME = 25.0f;
+    private bool spawnUIonce = false;
+
+    private float BLOCKED_TIME = 45.0f/10;
+    private float MINI_TIME = 25.0f/10;
     private float BOSS_TIME = 150.0f;
 
     private float SPAWN_TIMER = 0.0f;
@@ -70,6 +75,22 @@ public class StopPointSpawnScript : MonoBehaviour
                     pathingManager.playerStop = false;
                     Destroy(Blockings);
                     Destroy(this);
+                }
+            }
+            else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.SHOP)
+            {
+                if (!spawnUIonce)
+                {
+                    ShopManager.ExitShopClicked();
+                    spawnUIonce = true;
+                }
+            }
+            else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.CAMP)
+            {
+                if (!spawnUIonce)
+                {
+                    CampManager.startResting();
+                    spawnUIonce = true;
                 }
             }
 
