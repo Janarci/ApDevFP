@@ -15,9 +15,6 @@ public class fairyAnim : MonoBehaviour
     private NavMeshAgent agent;
     public float attackRadius = 3f;
 
-
-
-
     void Start()
     {
         interactionTransform = this.gameObject.transform;
@@ -25,13 +22,6 @@ public class fairyAnim : MonoBehaviour
         destination();
         this.anim = GetComponent<Animation>();
         anim.Play("Run");
-        //StartCoroutine(animCoroutine());
-        /*
-        foreach (AnimationState state in anim)
-        {
-            state.speed = 0.0F;
-        }*/
-
     }
 
 	private void Update()
@@ -43,8 +33,6 @@ public class fairyAnim : MonoBehaviour
 
             this.anim.Play("Attack1");
             StartCoroutine(attackCycle());
-            
-            
         }
     }
 
@@ -61,21 +49,6 @@ public class fairyAnim : MonoBehaviour
         if (!isDead) {
             this.anim.Play("Attack1");
             StartCoroutine(attackCycle());
-        }
-    }
-    IEnumerator animCoroutine()
-    {
-        if (isDead)
-        {
-            StopCoroutine(animCoroutine());
-        }
-        else
-        {
-            yield return new WaitForSeconds(5);
-            this.anim.PlayQueued("Attack1", QueueMode.CompleteOthers);
-            this.anim.PlayQueued("Idle", QueueMode.CompleteOthers);
-            //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-            StartCoroutine(animCoroutine());
         }
     }
 
@@ -100,7 +73,6 @@ public class fairyAnim : MonoBehaviour
         float distance = Vector3.Distance(playerPos.position, objectPos.position);
         if (distance < attackRadius)
         {
-            Debug.Log("Can Interact with this object!");
             return true;
         }
         else

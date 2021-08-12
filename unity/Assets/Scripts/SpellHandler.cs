@@ -10,15 +10,17 @@ public class SpellHandler : MonoBehaviour
 	private float manaMax = 100;
     private float currentMana = 0;
     private float spellcost = 20;
+    private float manaRegen = 5.0f;
     /*[Range(0f, 10f)]
     [Space]
     [Header("TestText")]
     [Tooltip("hover tooltip")]*/
     public ManaScript mana;
     public sfxHandler sfx;
-
+    private CheatScript cheats;
     void Start()
     {
+        cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
         currentMana = manaMax;
         mana.setManaMax(manaMax);
         //bool TruorFal = (Random.value > 0.5f);
@@ -27,7 +29,7 @@ public class SpellHandler : MonoBehaviour
 	private void Update()
 	{
         if(currentMana < manaMax)
-            currentMana += 5.0f * Time.deltaTime;
+            currentMana += manaRegen * Time.deltaTime;
         mana.updateMana(currentMana);
 	}
 
@@ -56,10 +58,34 @@ public class SpellHandler : MonoBehaviour
     {
         return spellType;
     }
+    public float getCurrentMana()
+    {
+        return currentMana;
+    }
 
     public void SpellUse()
     {
-        currentMana -= 20;
-        mana.updateMana(currentMana);
+        if (!cheats.manaCheat())
+        {
+            currentMana -= spellcost;
+            mana.updateMana(currentMana);
+        }
+    }
+
+    public void increaseMaxMana()
+    {
+        //setmanamax call
+        //for future max mana increase through shop
+    }
+
+    public void increaseManaRegen()
+    {
+        //for future mana regen increase through shop
+    }
+
+    public void lowerSpellCost()
+    {
+        //for future spell cost increase through shop
+
     }
 }

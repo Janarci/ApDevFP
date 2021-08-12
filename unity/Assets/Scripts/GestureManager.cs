@@ -11,7 +11,6 @@ public class GestureManager : MonoBehaviour
     private Vector2 startPoint = Vector2.zero;
     private Vector2 endPoint = Vector2.zero;
     private float gestureTime = 0.0f;
-    public sfxHandler sfx;
 
     private void Awake()
     {
@@ -81,7 +80,6 @@ public class GestureManager : MonoBehaviour
                 TapDestroy receive = hitObj.GetComponent<TapDestroy>();
                 if(receive != null)
                 {
-                    sfx.play();
                     receive.destroyObj();
                 }
             }
