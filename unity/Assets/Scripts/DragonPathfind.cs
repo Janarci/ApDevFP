@@ -1,0 +1,84 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class DragonPathfind : MonoBehaviour
+{
+
+    [SerializeField] private Transform player;
+    [SerializeField] private HealthHandler damage;
+
+    public float attackRadius = 3f;
+    Transform interactionTransform;
+    private bool isDead = false;
+    private Animator animator;
+    private NavMeshAgent agent;
+
+
+    private void Awake()
+	{
+        interactionTransform = this.gameObject.transform;
+
+        agent = this.GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+	}
+
+	// Start is called before the first frame update
+	void Start()
+    {
+        setDestination();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (canInteract(player, interactionTransform))
+        {
+            StartCoroutine(attackCycle());
+        }
+    }
+
+    IEnumerator attackCycle()
+    {
+        animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(3f);
+        animator.ResetTrigger("Attack");
+        if (!isDead)
+        {
+            
+            StartCoroutine(attackCycle());
+        }
+    }
+
+    private void setDestination()
+    {
+        Vector3 TargetVec = player.transform.position;
+        agent.SetDestination(TargetVec);
+    }
+    public bool canInteract(Transform playerPos, Transform objectPos)
+    {
+        float distance = Vector3.Distance(playerPos.position, objectPos.position);
+        if (distance < attackRadius)
+        {
+            agent.Stop();
+            return true;
+        }
+        else
+            return false;
+    }
+    public void animDead()
+    {
+        animator.SetBool("Die", true);
+        agent.Stop();
+        this.isDead = true;
+        StopAllCoroutines();
+
+    }
+    public void damagePlayer()
+    {
+        damage.getHitBoss();
+    }
+
+}

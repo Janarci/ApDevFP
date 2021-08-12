@@ -9,6 +9,7 @@ public class HealthHandler : MonoBehaviour
     private float healthMax = 100;
     private float currentHealth = 0;
     private float fairyDamage = 20;
+    private float bossDamage = 50;
     [SerializeField] private HealthScript health;
     private CheatScript cheats;
 
@@ -32,6 +33,15 @@ public class HealthHandler : MonoBehaviour
         if (!cheats.healthCheat())
         {
             currentHealth -= fairyDamage;
+            health.updateHealth(currentHealth);
+        }
+    }
+
+    public void getHitBoss()
+    {
+        if (!cheats.healthCheat())
+        {
+            currentHealth -= bossDamage;
             health.updateHealth(currentHealth);
         }
     }
