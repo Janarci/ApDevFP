@@ -7,6 +7,8 @@ public class GestureManager : MonoBehaviour
     public EventHandler<TapEventArgs> onTap;
     public static GestureManager Instance;
     public TapProperty tapProperty;
+    public SwipeProperty _SwipeProperty;
+
     private Touch trackedFinger1;
     private Vector2 startPoint = Vector2.zero;
     private Vector2 endPoint = Vector2.zero;
@@ -46,10 +48,18 @@ public class GestureManager : MonoBehaviour
             else if (trackedFinger1.phase == TouchPhase.Ended)
             {
                 this.endPoint = trackedFinger1.position;
-                if (gestureTime <= tapProperty.tapTime && Vector2.Distance(startPoint,endPoint) < (Screen.dpi * tapProperty.tapDistance))
+                if (gestureTime <= tapProperty.tapTime && Vector2.Distance(startPoint, endPoint) < (Screen.dpi * tapProperty.tapDistance))
                 {
                     FireTapEvent(startPoint);
                 }
+                if (gestureTime <= _SwipeProperty.swipeTime &&
+                    Vector2.Distance(startPoint, endPoint) >= (Screen.dpi * _SwipeProperty.minSwiptDistance)) 
+                {
+                    Debug.Log("Swipe");
+                    FireSwipeEvent(startPoint);
+                }
+
+
             }
             else
             {
@@ -60,7 +70,7 @@ public class GestureManager : MonoBehaviour
 
     private void FireTapEvent(Vector2 pos)
     {
-        Debug.Log("Tap!");
+        //Debug.Log("Tap!");
         if (onTap != null)
         {
             GameObject hitObj = null;
@@ -85,7 +95,33 @@ public class GestureManager : MonoBehaviour
             }
         }
     }
+    private void FireSwipeEvent(Vector2 pos)
+    {
+       // Debug.Log("Tap!");
+        if (onTap != null)
+        {
+            GameObject hitObj = null;
+            Ray ray = Camera.main.ScreenPointToRay(pos);
+            RaycastHit hit = new RaycastHit();
 
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                hitObj = hit.collider.gameObject;
+            }
+
+            TapEventArgs args = new TapEventArgs(pos, hitObj);
+            onTap(this, args);
+
+            if (hitObj != null)
+            {
+                TapDestroy receive = hitObj.GetComponent<TapDestroy>();
+                if (receive != null)
+                {
+                    receive.destroyObjShield();
+                }
+            }
+        }
+    }
     private void OnDrawGizmos()
     {
         if (Input.touchCount > 0)
