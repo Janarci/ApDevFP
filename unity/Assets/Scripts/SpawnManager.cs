@@ -22,6 +22,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         INIT_TIME += Time.deltaTime;
 
         if (stage == 1)
@@ -42,6 +43,26 @@ public class SpawnManager : MonoBehaviour
             INIT_TIME = 0.0f;
             spawnFairy();
         }
+    }
+
+    public void destroyAllFairy()
+    {
+        int i = 0;
+
+        GameObject[] allFairy = new GameObject[transform.childCount];
+
+        foreach (Transform child in transform)
+        {
+            allFairy[i] = child.gameObject;
+            i += 1;
+        }
+
+        foreach (GameObject child in allFairy)
+        {
+            DestroyImmediate(child.gameObject);
+
+        }
+
     }
 
     private void spawnFairy()
