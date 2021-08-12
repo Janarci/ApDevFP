@@ -62,7 +62,7 @@ public class DragonPathfind : MonoBehaviour
         float distance = Vector3.Distance(playerPos.position, objectPos.position);
         if (distance < attackRadius)
         {
-            agent.Stop();
+            agent.isStopped = true;
             return true;
         }
         else
@@ -71,7 +71,7 @@ public class DragonPathfind : MonoBehaviour
     public void animDead()
     {
         animator.SetBool("Die", true);
-        agent.Stop();
+        agent.isStopped = true;
         this.isDead = true;
         StopAllCoroutines();
 

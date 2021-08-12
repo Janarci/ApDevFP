@@ -44,4 +44,15 @@ public class TapDestroy : MonoBehaviour
             }
         }
     }
+
+    public void destroyObjShield()
+    {
+        if (Spellhandler.getCurrentMana() >= 30 && shield)
+        {
+            sfx.play();
+            Spellhandler.SpellUse();
+             Destroy(this.gameObject);
+            
+        }
+    }
 }
