@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &730049106373513156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730049106373513162}
+  - component: {fileID: 730049106373513163}
+  - component: {fileID: 730049106373513161}
+  m_Layer: 0
+  m_Name: FairySpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730049106373513162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730049106373513156}
+  m_LocalRotation: {x: -0, y: 0.9993095, z: -0, w: -0.037156288}
+  m_LocalPosition: {x: -1.2, y: 3.4825833, z: -33.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730049106373513163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730049106373513156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fef9f37874fba429817ba3b7dc8f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fairyTemplate1: {fileID: 2126681663941937871, guid: 446b271da970848479f55a6a23aa5324, type: 3}
+  fairyTemplate2: {fileID: 6342385019743487810, guid: a806a2667a0950749a2f750eaa440cf1, type: 3}
+  fairyTemplate3: {fileID: 8199203363468419962, guid: b8bdd57083bf0614083d9bd6e6367fce, type: 3}
+--- !u!114 &730049106373513161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730049106373513156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a96190cc8983c43be1ca0505e64d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShakeDetectionThreshold: 4
+  MinShakeInterval: 0

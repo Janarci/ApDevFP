@@ -12,7 +12,6 @@ public class GestureManager : MonoBehaviour
     private Vector2 endPoint = Vector2.zero;
     private float gestureTime = 0.0f;
 
-
     private void Awake()
     {
         if (Instance == null)
