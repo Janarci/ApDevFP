@@ -6,7 +6,7 @@ public class SpellHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private int spellType = 0;
+    private int spellType = 1;
 	private float manaMax = 100;
     private float currentMana = 0;
     private float spellcost = 20;
@@ -23,6 +23,7 @@ public class SpellHandler : MonoBehaviour
         cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
         currentMana = manaMax;
         mana.setManaMax(manaMax);
+        sfx.setCurrentSound("Fire");
         //bool TruorFal = (Random.value > 0.5f);
         //change editor color when game run
     }
