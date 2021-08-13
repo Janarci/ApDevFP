@@ -35,7 +35,7 @@ public class DragonPathfind : MonoBehaviour
     void Update()
     {
 
-        if (canInteract(player, interactionTransform) && !isClose)
+        if (canInteract(player, interactionTransform))
         {
             StartCoroutine(attackCycle());
         }
@@ -63,7 +63,6 @@ public class DragonPathfind : MonoBehaviour
         float distance = Vector3.Distance(playerPos.position, objectPos.position);
         if (distance < attackRadius)
         {
-            isClose = true;
             agent.isStopped = true;
             return true;
         }
