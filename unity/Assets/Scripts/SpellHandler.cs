@@ -22,6 +22,7 @@ public class SpellHandler : MonoBehaviour
     private CheatScript cheats;
     void Start()
     {
+        sfx = GameObject.Find("SpellAudioSource").GetComponent<sfxHandler>();
         cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
         currentMana = manaMax;
         mana.setManaMax(manaMax);
