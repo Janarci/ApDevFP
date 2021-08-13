@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class StopPointSpawnScript : MonoBehaviour
@@ -102,7 +103,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     triggerOnce = false;
                     Destroy(this);
                     FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
-
+                    SceneManager.LoadSceneAsync("Win");
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.SHOP)

@@ -90,6 +90,7 @@ public class SpellHandler : MonoBehaviour
     public void increaseMaxMana()
     {
         manaMax += 60;
+        mana.setManaMax(manaMax);
     }
 
     public void increaseManaRegen()

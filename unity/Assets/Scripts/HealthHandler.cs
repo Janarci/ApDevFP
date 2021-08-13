@@ -54,6 +54,7 @@ public class HealthHandler : MonoBehaviour
     public void increaseMaxHealth()
     {
         healthMax += 80;
+        health.setHealthMax(healthMax);
     }
 
     public void fullHeal()
