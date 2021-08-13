@@ -12,7 +12,6 @@ public class ShopUIBehavior : MonoBehaviour
     [SerializeField] private Text Cost;
     [SerializeField] private Text Owned;
     [SerializeField] private Text BuyingAmount;
-    //private int amount = 0;
     [SerializeField] private Slider slider;
 
     [SerializeField] private GameObject DragonHam;
@@ -20,8 +19,6 @@ public class ShopUIBehavior : MonoBehaviour
     [SerializeField] private GameObject ManaPotion;
     [SerializeField] private GameObject Carrot;
     [SerializeField] private GameObject Bomb;
-
-    [SerializeField] private GameObject shopCollider;
     [SerializeField] private PathingScript Player;
 
     [SerializeField] private BombHandler bombHandler;
@@ -92,7 +89,6 @@ public class ShopUIBehavior : MonoBehaviour
     {
         resetUIPopUps();
         EncounteredShop.SetActive(false);
-        Destroy(shopCollider);
         Player.playerStop = false;
     }
 
