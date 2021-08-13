@@ -18705,6 +18705,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1898770861536331370, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.858
+      objectReference: {fileID: 0}
     - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -18771,11 +18775,15 @@ PrefabInstance:
       objectReference: {fileID: 695379266}
     - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.54
+      value: -17.354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.778
       objectReference: {fileID: 0}
     - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.63
+      value: 3.957
       objectReference: {fileID: 0}
     - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
@@ -19087,9 +19095,33 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 654412240}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.83
+      objectReference: {fileID: 0}
     - target: {fileID: 8047718526010542658, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.486
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.23
       objectReference: {fileID: 0}
     - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
@@ -19835,6 +19867,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1898770861536331370, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.441
+      objectReference: {fileID: 0}
     - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -19901,11 +19937,15 @@ PrefabInstance:
       objectReference: {fileID: 695379266}
     - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.49
+      value: -18.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.24
+      value: 8.619
       objectReference: {fileID: 0}
     - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
@@ -27085,9 +27125,33 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 654412240}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698766476098875435, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.56
+      objectReference: {fileID: 0}
     - target: {fileID: 8047718526010542658, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728744, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.51
       objectReference: {fileID: 0}
     - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
@@ -28586,6 +28650,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
+      propertyPath: BOSS_INTERVAL1
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 654412242}
@@ -29144,6 +29212,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
+      propertyPath: BOSS_INTERVAL1
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 90993728}
@@ -29314,6 +29386,10 @@ PrefabInstance:
     - target: {fileID: 2733354573206854933, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: m_Name
       value: FairySpawner (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
+      propertyPath: BOSS_INTERVAL1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
@@ -30735,6 +30811,10 @@ PrefabInstance:
       value: -16.89
       objectReference: {fileID: 0}
     - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869548, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.1
       objectReference: {fileID: 0}
@@ -30855,6 +30935,10 @@ PrefabInstance:
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: isBossSpawner
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
+      propertyPath: BOSS_INTERVAL1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
