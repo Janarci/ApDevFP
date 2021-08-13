@@ -14,7 +14,12 @@ public class TapDestroy : MonoBehaviour
 
     bool killed = false;
     private int currentSpell;
-    public void destroyObj()
+
+	private void Awake()
+	{
+        sfx = GameObject.Find("SpellAudioSource").GetComponent<sfxHandler>();
+	}
+	public void destroyObj()
     {
         currentSpell = Spellhandler.currentSpell();
         if (Spellhandler.getCurrentMana() >= 20 && !killed)

@@ -12,6 +12,7 @@ public class ShakeScript : MonoBehaviour
     private float sqrShakeDetectionThreshold;
 
     private float timeSinceLastShake;
+    private BombHandler bomb;
 
 
     private SpawnManager spawnM;
@@ -19,6 +20,7 @@ public class ShakeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        bomb = GameObject.Find("BombManager").GetComponent<BombHandler>();
         sqrShakeDetectionThreshold = Mathf.Pow(ShakeDetectionThreshold, 2);
         spawnM = GetComponent<SpawnManager>();
 
@@ -29,8 +31,9 @@ public class ShakeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold)
+        if (Input.acceleration.sqrMagnitude >= sqrShakeDetectionThreshold && bomb.bombAvailable)
         {
+            bomb.onBombUse();
             spawnM.destroyAllFairy();
         }
         
