@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class MainMenuBGMScript : MonoBehaviour
 {
+    [SerializeField] private BGMhandler bGMhandler;
     void Awake()
     {
-        GameObject[] music = GameObject.FindGameObjectsWithTag("BGM");
-        if(music.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
-
-        DontDestroyOnLoad(this.gameObject);
         
+        bGMhandler.setCurrentSound("Idle");
+
     }
 }

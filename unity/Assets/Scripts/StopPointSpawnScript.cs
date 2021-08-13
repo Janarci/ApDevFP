@@ -19,8 +19,8 @@ public class StopPointSpawnScript : MonoBehaviour
 
     private bool spawnUIonce = false;
 
-    private float BLOCKED_TIME = 40.0f/39;
-    private float MINI_TIME = 20.0f/19;
+    private float BLOCKED_TIME = 30.0f;
+    private float MINI_TIME = 15.0f;
     private float BOSS_TIME = 150.0f;
 
     private float SPAWN_TIMER = 0.0f;
