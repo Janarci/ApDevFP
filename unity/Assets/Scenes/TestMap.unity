@@ -28656,7 +28656,7 @@ PrefabInstance:
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
       value: 
-      objectReference: {fileID: 654412242}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate2
       value: 
@@ -28664,7 +28664,7 @@ PrefabInstance:
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate3
       value: 
-      objectReference: {fileID: 654412240}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854939, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -29222,11 +29222,11 @@ PrefabInstance:
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate2
       value: 
-      objectReference: {fileID: 654412241}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate3
       value: 
-      objectReference: {fileID: 654412240}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854939, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -30943,11 +30943,11 @@ PrefabInstance:
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate1
       value: 
-      objectReference: {fileID: 654412242}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate2
       value: 
-      objectReference: {fileID: 654412241}
+      objectReference: {fileID: 90993728}
     - target: {fileID: 2733354573206854938, guid: 551779b7bbd86a6409aa7a055fa1440f, type: 3}
       propertyPath: fairyTemplate3
       value: 
