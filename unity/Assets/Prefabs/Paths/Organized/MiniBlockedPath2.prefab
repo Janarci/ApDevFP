@@ -290,7 +290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4687814984475070152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.64, y: -1.98, z: -8.929999}
+  m_LocalPosition: {x: -8.16, y: -2.07, z: -3.28}
   m_LocalScale: {x: 8.98668, y: 3.2375798, z: 1}
   m_Children: []
   m_Father: {fileID: 3541882195646150313}
@@ -327,6 +327,7 @@ MonoBehaviour:
   ShopManager: {fileID: 0}
   CampManager: {fileID: 0}
   spawnHandler: {fileID: 0}
+  coinHandler: {fileID: 0}
 --- !u!1 &5394032406780222396
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,10 +43,9 @@ public class StopPointSpawnScript : MonoBehaviour
                     FindObjectOfType<BGMhandler>().setCurrentSound("Blocked");
                     spawnHandler.SetActive(true);
                 }
-                if (pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.BOSS)
+                if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.BOSS)
                 {
                     FindObjectOfType<BGMhandler>().setCurrentSound("Boss");
-                    spawnHandler.SetActive(true);
                 }
             }
         }
