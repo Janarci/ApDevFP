@@ -29,6 +29,7 @@ public class HealthHandler : MonoBehaviour
         if (currentHealth <= 0)
         {
             SceneManager.LoadSceneAsync("Lose");
+
         }
         
     }
