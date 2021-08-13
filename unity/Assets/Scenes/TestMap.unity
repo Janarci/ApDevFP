@@ -454,6 +454,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2481214478461826923, guid: 16d1614be9ee7a048a4e8a1a237d7ec9, type: 3}
+      propertyPath: _SwipeProperty.swipeTime
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481214478461826923, guid: 16d1614be9ee7a048a4e8a1a237d7ec9, type: 3}
+      propertyPath: _SwipeProperty.minSwiptDistance
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d1614be9ee7a048a4e8a1a237d7ec9, type: 3}
 --- !u!1001 &50428489
@@ -1135,6 +1143,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1633463861}
     - target: {fileID: 5225732964104883464, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+      propertyPath: Spellhandler
+      value: 
+      objectReference: {fileID: 510966506}
+    - target: {fileID: 5225732964995100568, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 289052380}
+    - target: {fileID: 5225732964995100568, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 1633463861}
+    - target: {fileID: 5225732964995100568, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
       propertyPath: Spellhandler
       value: 
       objectReference: {fileID: 510966506}
