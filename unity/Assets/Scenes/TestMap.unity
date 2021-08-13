@@ -1138,6 +1138,10 @@ PrefabInstance:
       propertyPath: Spellhandler
       value: 
       objectReference: {fileID: 510966506}
+    - target: {fileID: 5225732965123812457, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+      propertyPath: m_Speed
+      value: 2.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5225732965123812458, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
       propertyPath: damage
       value: 
