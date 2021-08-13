@@ -25,6 +25,7 @@ public class TapDestroy : MonoBehaviour
             {
                 killed = true;
                 coin.getCoin();
+                coin.getScoreFairy();
                 fairyAnim animation = this.gameObject.GetComponent<fairyAnim>();
                 animation.animDead();
                 Destroy(this.gameObject, 2.5f);
@@ -34,13 +35,11 @@ public class TapDestroy : MonoBehaviour
 
                 killed = true;
                 coin.getCoin();
+                coin.getScoreBoss();
                 Transform dragon = this.gameObject.transform.root;
                 Destroy(dragon.gameObject, 2.5f);
                 DragonPathfind animation = dragon.GetComponent<DragonPathfind>();
                 animation.animDead();
-            }
-            else if (shield == true) {
-                Destroy(this.gameObject);
             }
         }
     }

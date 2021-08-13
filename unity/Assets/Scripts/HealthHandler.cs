@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthHandler : MonoBehaviour
@@ -25,6 +26,10 @@ public class HealthHandler : MonoBehaviour
     void Update()
     {
         health.updateHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadSceneAsync("Lose");
+        }
         
     }
 

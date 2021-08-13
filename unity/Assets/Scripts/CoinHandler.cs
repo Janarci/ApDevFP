@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class CoinHandler : MonoBehaviour
 {
     private int coinTotal = 0;
-    [SerializeField] private Text text;
+    private int scoreTotal = 0;
+    [SerializeField] private Text coinText;
+    [SerializeField] private Text scoreText;
 
 
     // Start is called before the first frame update
@@ -18,12 +20,23 @@ public class CoinHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = $"Gold: {coinTotal}";
+        coinText.text = $"Gold: {coinTotal}";
+        scoreText.text = $"Score: {scoreTotal}";
+
     }
 
     public void getCoin()
     {
         coinTotal += Random.Range(2,6) * 10;
+    }
+    public void getScoreFairy()
+    {
+        scoreTotal += 10;
+
+    }
+    public void getScoreBoss()
+    {
+        scoreTotal += 50;
     }
 
     public void getPathCompleteCoin(int value)
