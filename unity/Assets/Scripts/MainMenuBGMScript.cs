@@ -7,8 +7,9 @@ public class MainMenuBGMScript : MonoBehaviour
     [SerializeField] private BGMhandler bGMhandler;
     void Awake()
     {
+        bGMhandler.setCurrentSound("Blocked");
+
         
-        bGMhandler.setCurrentSound("Idle");
 
     }
 }

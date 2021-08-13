@@ -29,21 +29,23 @@ public class BGMhandler : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.playOnAwake = false;
+            s.source.loop = true;
         }
 
+        setCurrentSound("Idle");
     }
 
     public void setCurrentSound(string soundName)
     {
+        if (currentBGM != null)
+        {
+            currentBGM.source.Stop();
+        }
         currentBGM = Array.Find(BGMs, sound => sound.soundName == soundName);
-
-    }
-
-    public void play()
-    {
         currentBGM.source.Play();
-
     }
+
 
 }
 

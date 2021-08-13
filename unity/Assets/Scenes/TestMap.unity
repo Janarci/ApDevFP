@@ -24105,6 +24105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGMManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4100789822071430924, guid: 2291894a88135894dbc62ad410d9541a, type: 3}
+      propertyPath: m_TagString
+      value: BGM
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2291894a88135894dbc62ad410d9541a, type: 3}
 --- !u!1001 &639643273997432184

@@ -39,6 +39,12 @@ public class StopPointSpawnScript : MonoBehaviour
                 if (pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.SHOP 
                     && pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.CAMP)
                 {
+                    FindObjectOfType<BGMhandler>().setCurrentSound("Blocked");
+                    spawnHandler.SetActive(true);
+                }
+                if (pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.BOSS)
+                {
+                    FindObjectOfType<BGMhandler>().setCurrentSound("Boss");
                     spawnHandler.SetActive(true);
                 }
             }
@@ -68,8 +74,8 @@ public class StopPointSpawnScript : MonoBehaviour
                     coinHandler.getPathCompleteCoin(530);
                     triggerOnce = false;
                     Destroy(this);
-                    
-                    
+                    FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
+
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.MINI)
@@ -82,7 +88,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     coinHandler.getPathCompleteCoin(350);
                     triggerOnce = false;
                     Destroy(this);
-                    
+                    FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 
                 }
             }
@@ -95,7 +101,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     Destroy(spawnHandler);
                     triggerOnce = false;
                     Destroy(this);
-                    
+                    FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 
                 }
             }
