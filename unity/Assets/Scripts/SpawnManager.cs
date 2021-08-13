@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
     private float INIT_TIME = 10.0f;
 
     public bool isBossSpawner = false;
-    public float BOSS_INTERVAL1 = 30.0f;
+    public float BOSS_INTERVAL1 = 20.0f;
 
     //public bool roundStart = false;
 
