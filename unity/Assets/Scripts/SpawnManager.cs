@@ -46,10 +46,10 @@ public class SpawnManager : MonoBehaviour
 
         if (isBossSpawner)
         {
-            if (INIT_TIME >= BOSS_INTERVAL1)
+            if (INIT_TIME >= SPAWN_INTERVAL)
             {
                 INIT_TIME = Random.Range(0.0f, 3.67f); ;
-                spawnFairy();
+                spawnDragon();
             }
         }
         else
@@ -114,4 +114,34 @@ public class SpawnManager : MonoBehaviour
         
     }
 
+    private void spawnDragon()
+    {
+        int fairyType = Random.Range(1, 4);
+
+        float xOffset = Random.Range(-3.0f, 3.0f);
+        //float yOffset = Random.Range(1, 3);
+        //float zOffset = Random.Range(1, 3);
+        Vector3 spawnPosition = this.transform.position;
+        spawnPosition.x = this.transform.position.x + xOffset;
+        GameObject fairyClone;
+        if (fairyType == 1)
+        {
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, this.fairyTemplate1.transform.rotation);
+            fairyClone.SetActive(true);
+        }
+        else if (fairyType == 2)
+        {
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, this.fairyTemplate2.transform.rotation);
+            fairyClone.SetActive(true);
+        }
+        else if (fairyType == 3)
+        {
+
+            fairyClone = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, this.fairyTemplate3.transform.rotation);
+            fairyClone.SetActive(true);
+        }
+
+    }
 }

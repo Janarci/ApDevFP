@@ -42,9 +42,9 @@ public class TapDestroy : MonoBehaviour
                 coin.getCoin();
                 coin.getScoreBoss();
                 Transform dragon = this.gameObject.transform.root;
-                Destroy(dragon.gameObject, 2.5f);
-                DragonPathfind animation = dragon.GetComponent<DragonPathfind>();
+                DragonPathfind animation = dragon.gameObject.GetComponent<DragonPathfind>();
                 animation.animDead();
+                Destroy(dragon.gameObject, 2.5f);
             }
         }
     }

@@ -14,6 +14,7 @@ public class DragonPathfind : MonoBehaviour
     private bool isDead = false;
     private Animator animator;
     private NavMeshAgent agent;
+    private bool isClose;
 
 
     private void Awake()
@@ -34,7 +35,7 @@ public class DragonPathfind : MonoBehaviour
     void Update()
     {
 
-        if (canInteract(player, interactionTransform))
+        if (canInteract(player, interactionTransform) && !isClose)
         {
             StartCoroutine(attackCycle());
         }
@@ -62,6 +63,7 @@ public class DragonPathfind : MonoBehaviour
         float distance = Vector3.Distance(playerPos.position, objectPos.position);
         if (distance < attackRadius)
         {
+            isClose = true;
             agent.isStopped = true;
             return true;
         }
@@ -70,10 +72,11 @@ public class DragonPathfind : MonoBehaviour
     }
     public void animDead()
     {
+        Debug.Log("works");
         animator.SetBool("Die", true);
         agent.isStopped = true;
         this.isDead = true;
-        StopAllCoroutines();
+       StopAllCoroutines();
 
     }
     public void damagePlayer()

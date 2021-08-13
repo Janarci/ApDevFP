@@ -4514,8 +4514,8 @@ MonoBehaviour:
   fairyTemplate1: {fileID: 679483712}
   fairyTemplate2: {fileID: 679483712}
   fairyTemplate3: {fileID: 679483712}
-  isBossSpawner: 0
-  BOSS_INTERVAL1: 30
+  isBossSpawner: 1
+  BOSS_INTERVAL1: 3
 --- !u!4 &1215555487
 Transform:
   m_ObjectHideFlags: 0
