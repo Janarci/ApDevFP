@@ -13,7 +13,7 @@ public class PathingScript : MonoBehaviour
     public int currentLocation = 0;
     public bool playerStop = false;
 
-    public float PLAYER_SPEED = 100.0f;
+    public float PLAYER_SPEED = 5.0f;
 
     // Start is called before the first frame update
     void Start()

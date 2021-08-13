@@ -19,8 +19,8 @@ public class StopPointSpawnScript : MonoBehaviour
 
     private bool spawnUIonce = false;
 
-    private float BLOCKED_TIME = 45.0f;
-    private float MINI_TIME = 25.0f;
+    private float BLOCKED_TIME = 40.0f;
+    private float MINI_TIME = 20.0f;
     private float BOSS_TIME = 150.0f;
 
     private float SPAWN_TIMER = 0.0f;
@@ -34,7 +34,7 @@ public class StopPointSpawnScript : MonoBehaviour
                 pathingManager.playerStop = true;
                 Debug.Log("startSpawn1");
                 triggerOnce = true;
-
+                SPAWN_TIMER = 0.0f;
                 //START SPAWN MOBS HERE
                 if (pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.SHOP 
                     && pathingManager.pathTypeList[pathingManager.currentLocation] != PathingScript.pathType.CAMP)
@@ -57,7 +57,7 @@ public class StopPointSpawnScript : MonoBehaviour
         if (triggerOnce)
         {
             SPAWN_TIMER += Time.deltaTime;
-            Debug.Log(SPAWN_TIMER);
+            //Debug.Log(SPAWN_TIMER);
             if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.BLOCKED)
             {
                 if (SPAWN_TIMER >= BLOCKED_TIME)
@@ -66,6 +66,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     Destroy(Blockings);
                     Destroy(spawnHandler);
                     coinHandler.getPathCompleteCoin(530);
+                    triggerOnce = false;
                     Destroy(this);
                     
                     
@@ -79,6 +80,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     Destroy(Blockings);
                     Destroy(spawnHandler);
                     coinHandler.getPathCompleteCoin(350);
+                    triggerOnce = false;
                     Destroy(this);
                     
 
@@ -91,7 +93,7 @@ public class StopPointSpawnScript : MonoBehaviour
                     pathingManager.playerStop = false;
                     Destroy(Blockings);
                     Destroy(spawnHandler);
-
+                    triggerOnce = false;
                     Destroy(this);
                     
 
@@ -103,6 +105,8 @@ public class StopPointSpawnScript : MonoBehaviour
                 {
                     ShopManager.ExitShopClicked();
                     spawnUIonce = true;
+                    triggerOnce = false;
+                    Destroy(this);
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.CAMP)
@@ -111,6 +115,8 @@ public class StopPointSpawnScript : MonoBehaviour
                 {
                     CampManager.startResting();
                     spawnUIonce = true;
+                    triggerOnce = false;
+                    Destroy(this);
                 }
             }
 

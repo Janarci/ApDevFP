@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
 
             if (stage == 1)
             {
-                SPAWN_INTERVAL = 5.0f;
+                SPAWN_INTERVAL = 11.0f;
             }
             if (stage == 2)
             {

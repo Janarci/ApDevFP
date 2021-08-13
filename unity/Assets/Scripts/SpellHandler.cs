@@ -100,6 +100,7 @@ public class SpellHandler : MonoBehaviour
     public void addManaPotion()
     {
         manaPotionAmount += 1;
+        ManaPotionDisplay.text = $"{manaPotionAmount}";
     }
 
     public void lowerSpellCost()

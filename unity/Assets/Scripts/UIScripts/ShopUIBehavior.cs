@@ -116,12 +116,13 @@ public class ShopUIBehavior : MonoBehaviour
 
     public void BuyClicked()
     {
-        resetUIPopUps();
+        
         if (DragonHam.activeInHierarchy)
         {
             if (slider.value != 0)
             {
-                for (int i = 0; i < slider.value; i++) {
+                for (int i = 0; i < slider.value; i++) 
+                {
                     coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_dragonHam.currentCost);
                     healthHandler.increaseMaxHealth();
                     i_dragonHam.buyCount++;
@@ -152,6 +153,7 @@ public class ShopUIBehavior : MonoBehaviour
                     coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_manaPot.currentCost);
                     spellHandler.addManaPotion();
                     i_manaPot.buyCount++;
+                    i_manaPot.currentCost = i_manaPot.initCost;
                 }
             }
         }
@@ -163,6 +165,7 @@ public class ShopUIBehavior : MonoBehaviour
                 {
                     coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_carrot.currentCost);
                     spellHandler.increaseManaRegen();
+
                     i_carrot.buyCount++;
                     i_carrot.currentCost += (50 * i_carrot.buyCount);
                 }
@@ -172,12 +175,13 @@ public class ShopUIBehavior : MonoBehaviour
         {
             if (slider.value != 0)
             {
-                coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_carrot.currentCost);
+                coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_bomb.currentCost);
                 bombHandler.bombAvailable = true;
+                bombHandler.onBombPurchase();
                 i_bomb.buyCount++;
             }
         }
-
+        resetUIPopUps();
         MainShop.SetActive(true);
     }
 
@@ -191,9 +195,17 @@ public class ShopUIBehavior : MonoBehaviour
         Cost.text = $"Cost: {i_dragonHam.currentCost} Gold";
         Owned.text = $"Consumed: {i_dragonHam.buyCount}";
 
-        slider.maxValue = (coinHandler.getGoldTotal() / i_dragonHam.currentCost);
+        int tempGoldTotal = coinHandler.getGoldTotal();
+        int tempCurrentCost = i_dragonHam.currentCost;
+        slider.maxValue = 0;
+        while (tempGoldTotal >= tempCurrentCost)
+        {
+            tempGoldTotal -= tempCurrentCost;
+            tempCurrentCost *= 2;
+            slider.maxValue++;
+        }
         slider.minValue = 0;
-
+        
     }
 
     public void FungusClicked()
@@ -206,7 +218,16 @@ public class ShopUIBehavior : MonoBehaviour
         Cost.text = $"Cost: {i_fungus.currentCost} Gold";
         Owned.text = $"Consumed: {i_fungus.buyCount}";
 
-        slider.maxValue = (coinHandler.getGoldTotal()/ i_fungus.currentCost);
+        int tempGoldTotal = coinHandler.getGoldTotal();
+        int tempCurrentCost = i_fungus.currentCost;
+        slider.maxValue = 0;
+        while (tempGoldTotal >= tempCurrentCost)
+        {
+            tempGoldTotal -= tempCurrentCost;
+            tempCurrentCost -= 40;
+            tempCurrentCost *= 2;
+            slider.maxValue++;
+        }
         slider.minValue = 0;
     }
 
@@ -234,7 +255,18 @@ public class ShopUIBehavior : MonoBehaviour
         Cost.text = $"Cost: {i_carrot.currentCost} Gold";
         Owned.text = $"Consumed: {i_carrot.buyCount}";
 
-        slider.maxValue = (coinHandler.getGoldTotal() / i_carrot.currentCost);
+        int tempGoldTotal = coinHandler.getGoldTotal();
+        int tempCurrentCost = i_carrot.currentCost;
+        int tempBuyCount = i_carrot.buyCount;
+        slider.maxValue = 0;
+        while (tempGoldTotal >= tempCurrentCost)
+        {
+            tempGoldTotal -= tempCurrentCost;
+            tempBuyCount++;
+            slider.maxValue++;
+            tempCurrentCost += (50 * tempBuyCount);
+            
+        }
         slider.minValue = 0;
     }
 
@@ -251,6 +283,10 @@ public class ShopUIBehavior : MonoBehaviour
         if (!bombHandler.bombAvailable){
             Owned.text = $"Owned: 0\n You can only have 1 bomb at a time!";
             slider.maxValue = (coinHandler.getGoldTotal()/ i_bomb.currentCost);
+            if (slider.maxValue > 1)
+            {
+                slider.maxValue = 1;
+            }
         }
         else{
             Owned.text = $"Owned: 1\n You can only have 1 bomb at a time!";
