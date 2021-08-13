@@ -50,4 +50,9 @@ public class HealthHandler : MonoBehaviour
     {
         healthMax += 80;
     }
+
+    public void fullHeal()
+    {
+        currentHealth = healthMax;
+    }
 }

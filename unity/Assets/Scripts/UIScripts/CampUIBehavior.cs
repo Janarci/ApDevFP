@@ -11,6 +11,8 @@ public class CampUIBehavior : MonoBehaviour
     [SerializeField] private GameObject campCollider;
     [SerializeField] private PathingScript Player;
 
+    [SerializeField] private HealthHandler healthHandler;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,27 +33,25 @@ public class CampUIBehavior : MonoBehaviour
 
     public void startResting()
     {
-        InitUI.SetActive(true);
-        BlackScreen.GetComponent<Animator>().Play("Blackscreen");
-        //heal all health
+        
 
-        BlackScreen.GetComponent<Animator>().StopPlayback();
-        InitUI.SetActive(false);
-        AfterRest.SetActive(true);
-        //StartCoroutine(RestAnim());
+
+        StartCoroutine(waitforsecs());
+        
+        
+        
     }
 
-    IEnumerator RestAnim()
+    IEnumerator waitforsecs()
     {
         InitUI.SetActive(true);
-        //BlackScreen.GetComponent<Animator>().Play("Blackscreen");
-        //heal all health
+        BlackScreen.GetComponent<Animator>().SetTrigger("StartBlackScreen");
         yield return new WaitForSeconds(2f);
-        //BlackScreen.GetComponent<Animator>().StopPlayback();
+        healthHandler.fullHeal();
         InitUI.SetActive(false);
         AfterRest.SetActive(true);
-
     }
+
 
     public void ContinueClicked()
     {

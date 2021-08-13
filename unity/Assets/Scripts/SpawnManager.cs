@@ -9,7 +9,10 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private GameObject fairyTemplate2;
     [SerializeField] private GameObject fairyTemplate3;
     private float SPAWN_INTERVAL = 3.0f;
-    private float INIT_TIME = 0.0f;
+    private float INIT_TIME = 10.0f;
+
+    public bool isBossSpawner = false;
+    public float BOSS_INTERVAL1 = 30.0f;
 
     //public bool roundStart = false;
 
@@ -30,7 +33,7 @@ public class SpawnManager : MonoBehaviour
 
             if (stage == 1)
             {
-                SPAWN_INTERVAL = 11.0f;
+                SPAWN_INTERVAL = 16.0f;
             }
             if (stage == 2)
             {
@@ -41,11 +44,22 @@ public class SpawnManager : MonoBehaviour
                 SPAWN_INTERVAL = 1.5f;
             }
 
-            if (INIT_TIME >= SPAWN_INTERVAL)
+        if (isBossSpawner)
+        {
+            if (INIT_TIME >= BOSS_INTERVAL1)
             {
-                INIT_TIME = 0.0f;
+                INIT_TIME = Random.Range(0.0f, 3.67f); ;
                 spawnFairy();
             }
+        }
+        else
+        {
+            if (INIT_TIME >= SPAWN_INTERVAL)
+            {
+                INIT_TIME = Random.Range(0.0f, 3.6f); ;
+                spawnFairy();
+            }
+        }
         //}
     }
 
