@@ -135,7 +135,7 @@ public class ShopUIBehavior : MonoBehaviour
                     coinHandler.setGoldTotal(coinHandler.getGoldTotal() - i_fungus.currentCost);
                     spellHandler.increaseMaxMana();
                     i_fungus.buyCount++;
-                    i_fungus.currentCost -= 40;
+                    i_fungus.currentCost -= 20;
                     i_fungus.currentCost *= 2;
                 }
             }
@@ -220,7 +220,7 @@ public class ShopUIBehavior : MonoBehaviour
         while (tempGoldTotal >= tempCurrentCost)
         {
             tempGoldTotal -= tempCurrentCost;
-            tempCurrentCost -= 40;
+            tempCurrentCost -= 20;
             tempCurrentCost *= 2;
             slider.maxValue++;
         }

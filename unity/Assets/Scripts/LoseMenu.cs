@@ -9,10 +9,12 @@ public class LoseMenu : MonoBehaviour
 	public void onRestartPress()
 	{
 		SceneManager.LoadSceneAsync("TestMap");
+		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}
 	public void onMainMenu()
 	{
 		SceneManager.LoadSceneAsync("MainMenu");
+		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}
 	public void onExitPress()
 	{
