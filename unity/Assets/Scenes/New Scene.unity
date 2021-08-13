@@ -2739,6 +2739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+--- !u!1 &679483712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5225732965641895047, guid: 0ef6aedfa3c75044cafbc1eabb689e7e, type: 3}
+  m_PrefabInstance: {fileID: 679483711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &689003115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4506,9 +4511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fef9f37874fba429817ba3b7dc8f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fairyTemplate1: {fileID: 1239398903}
-  fairyTemplate2: {fileID: 1391286769}
-  fairyTemplate3: {fileID: 1438272091}
+  fairyTemplate1: {fileID: 679483712}
+  fairyTemplate2: {fileID: 679483712}
+  fairyTemplate3: {fileID: 679483712}
   isBossSpawner: 0
   BOSS_INTERVAL1: 30
 --- !u!4 &1215555487
