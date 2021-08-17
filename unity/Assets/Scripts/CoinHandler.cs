@@ -11,13 +11,6 @@ public class CoinHandler : MonoBehaviour
     [SerializeField] private Text scoreText;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         coinText.text = $"Gold: {coinTotal}";

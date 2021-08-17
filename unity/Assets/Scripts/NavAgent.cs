@@ -14,12 +14,6 @@ public class NavAgent : MonoBehaviour
         agent = this.GetComponent<NavMeshAgent>();
         destination();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void destination()
     {
         Vector3 TargetVec = target.transform.position;
