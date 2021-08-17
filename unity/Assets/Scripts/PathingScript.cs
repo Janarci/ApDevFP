@@ -30,6 +30,17 @@ public class PathingScript : MonoBehaviour
             Player.transform.position = playerMovement;
         }
 
+        
+
+        for (int i = 0; i < pathList.Length; i++)
+        {
+            if (i < currentLocation - 2 && i > currentLocation + 3)
+            {
+                pathList[i].SetActive(false);
+            }
+            
+        }
+
 
     }
 
