@@ -12,13 +12,6 @@ public class BtnToTxt : MonoBehaviour
         myTxt = GameObject.Find("DismissibleText").GetComponent<Text>();
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TLBtn1()
     {
         myTxt.text = "Khalil Jan Davac Arcilla";

@@ -8,18 +8,6 @@ public class BombHandler : MonoBehaviour
     public bool bombAvailable = false;
     [SerializeField] private Text BombDisplay;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void onBombPurchase()
     {
         bombAvailable = true;
