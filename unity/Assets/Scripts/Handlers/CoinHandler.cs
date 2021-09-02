@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Advertisements;
 using UnityEngine.UI;
 
 public class CoinHandler : MonoBehaviour
@@ -10,8 +11,12 @@ public class CoinHandler : MonoBehaviour
     [SerializeField] private Text coinText;
     [SerializeField] private Text scoreText;
 
+	private void Start()
+	{
+        AdsManager._AdsManager.onAdDone += OnAdDone;
+	}
 
-    void Update()
+	void Update()
     {
         coinText.text = $"Gold: {coinTotal}";
         scoreText.text = $"Score: {scoreTotal}";
@@ -45,5 +50,17 @@ public class CoinHandler : MonoBehaviour
     public void setGoldTotal(int value)
     {
         coinTotal = value;
+    }
+
+
+    public void OnAdDone(object sender, AdFinishEventArgs args)
+    {
+        if (args.PlacementID == AdsManager.SampleRewarded)
+        {
+            if (args.AdResult == ShowResult.Finished) {
+                setGoldTotal(99999);
+                Debug.Log("ad finish");
+            }
+        }
     }
 }
