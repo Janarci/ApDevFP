@@ -6,7 +6,7 @@ public class MainMenuScript : MonoBehaviour
 {
 	public void onStartPress()
 	{
-		SceneManager.LoadSceneAsync("New Scene");
+		SceneManager.LoadSceneAsync("TestMap");
 	}
 	public void onExitPress()
 	{

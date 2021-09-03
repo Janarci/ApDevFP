@@ -109,6 +109,7 @@ public class StopPointSpawnScript : MonoBehaviour
             {
                 if (!spawnUIonce)
                 {
+                    FindObjectOfType<AdsManager>().ShowRewardedAd();
                     ShopManager.ExitShopClicked();
                     spawnUIonce = true;
                     triggerOnce = false;
@@ -119,6 +120,7 @@ public class StopPointSpawnScript : MonoBehaviour
             {
                 if (!spawnUIonce)
                 {
+                    FindObjectOfType<AdsManager>().ShowRewardedAd();
                     CampManager.startResting();
                     spawnUIonce = true;
                     triggerOnce = false;

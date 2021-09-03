@@ -28,6 +28,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(this);
         //true for testing false for publish
         Advertisement.Initialize(GameID, true);
     }
