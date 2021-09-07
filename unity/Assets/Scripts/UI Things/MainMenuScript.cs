@@ -4,9 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
-	public void onStartPress()
+	public void onEzPress()
 	{
-		SceneManager.LoadSceneAsync("TestMap");
+		SceneManager.LoadSceneAsync("EzMap");
+	}
+	public void onMidPress()
+	{
+		SceneManager.LoadSceneAsync("AverageMap");
+	}
+	public void onHardPress()
+	{
+		SceneManager.LoadSceneAsync("HardMap");
 	}
 	public void onExitPress()
 	{
