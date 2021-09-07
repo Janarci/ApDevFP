@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c2354c3f34daa8d45b9e671deb45b81c
   - enabled: 1
-    path: Assets/Scenes/TestMap.unity
+    path: Assets/Scenes/EzMap.unity
     guid: 459793e7c21a887458e0750192e0af10
+  - enabled: 1
+    path: Assets/Scenes/AverageMap.unity
+    guid: ad5b544b609dfef49a359061fc277736
+  - enabled: 1
+    path: Assets/Scenes/HardMap.unity
+    guid: b3b0410748bf24a47bae89a97699dd49
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 6abd22934d5dc9a4980877f13d0a70eb
