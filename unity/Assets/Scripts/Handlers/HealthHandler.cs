@@ -12,12 +12,12 @@ public class HealthHandler : MonoBehaviour
     private float fairyDamage = 20;
     private float bossDamage = 50;
     [SerializeField] private HealthScript health;
-    private CheatScript cheats;
+    [SerializeField] private CheatScript cheats;
 
     // Start is called before the first frame update
     void Start()
     {
-        cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
+        //cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
         currentHealth = healthMax;
         health.setHealthMax(healthMax);
     }

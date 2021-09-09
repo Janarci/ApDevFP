@@ -8,12 +8,20 @@ public class CheatScript : MonoBehaviour
     private bool infMana;
     private bool infHealth;
     private bool infMoney;
-
-	private void Awake()
+    private static CheatScript CheatScriptInstance;
+    private void Awake()
 	{
-        DontDestroyOnLoad(this);
-		
-	}
+        
+        if (CheatScriptInstance == null)
+        {
+            CheatScriptInstance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            DestroyObject(gameObject);
+        }
+    }
 
 	public void infManaOn(bool value)
     {

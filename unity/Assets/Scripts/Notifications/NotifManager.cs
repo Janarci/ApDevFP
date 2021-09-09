@@ -7,7 +7,8 @@ using Unity.Notifications.Android;
 public class NotifManager : MonoBehaviour
 {
 
-	
+    private static NotifManager NotifManagerInstance;
+
 	public void SendTestNotif()
 	{
 		string notif_Title = "The kingdom needs you!";
@@ -46,6 +47,14 @@ public class NotifManager : MonoBehaviour
 		DontDestroyOnLoad(this);
 		SetupDefaultChannel();
 		AndroidNotificationCenter.CancelAllNotifications();
+		if (NotifManagerInstance == null)
+        {
+			NotifManagerInstance = this;
+        }
+        else
+        {
+            DestroyObject(gameObject);
+        }
 	}
 	private void OnApplicationQuit()
 	{
