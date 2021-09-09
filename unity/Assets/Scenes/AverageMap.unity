@@ -57732,6 +57732,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2132660219151419535, guid: 6276301ad2b0b3842bf706e1b6c90145, type: 3}
+      propertyPath: cheats
+      value: 
+      objectReference: {fileID: 3975335401721623048, guid: 9a519535c2359f44b995ca4562f7eea8, type: 3}
+    - target: {fileID: 2132660219151419535, guid: 6276301ad2b0b3842bf706e1b6c90145, type: 3}
       propertyPath: health
       value: 
       objectReference: {fileID: 149463070}
@@ -64124,6 +64128,10 @@ PrefabInstance:
       propertyPath: mana
       value: 
       objectReference: {fileID: 149463068}
+    - target: {fileID: 7869359927865153523, guid: c8eb6e1646379934abe093982389fc58, type: 3}
+      propertyPath: cheats
+      value: 
+      objectReference: {fileID: 3975335401721623048, guid: 9a519535c2359f44b995ca4562f7eea8, type: 3}
     - target: {fileID: 7869359927865153523, guid: c8eb6e1646379934abe093982389fc58, type: 3}
       propertyPath: ManaPotionDisplay
       value: 
