@@ -16,13 +16,8 @@ public class LoseMenu : MonoBehaviour
 		playerName.text = webManager.currentPlayerName;
 		playerScore.text = webManager.currentPlayerScore.ToString();
 
-
+		webManager.GetPlayers();
 	}
-
-    private void Update()
-    {
-        
-    }
 
     public void onRestartPress()
 	{

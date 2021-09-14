@@ -13,6 +13,7 @@ public class WebHandlerScript : MonoBehaviour
     public int currentPlayerScore;
 
     public static WebHandlerScript webManager = null;
+    public int numberRanking = 1;
 
     private void Awake()
     {
@@ -67,8 +68,8 @@ public class WebHandlerScript : MonoBehaviour
     {
         Dictionary<string, string> PlayerParams = new Dictionary<string, string>();
         PlayerParams.Add("group_num", "14");
-        PlayerParams.Add("user_name", "Khalil");
-        PlayerParams.Add("score", "69");
+        PlayerParams.Add("user_name", currentPlayerName);
+        PlayerParams.Add("score", currentPlayerScore.ToString());
 
         string requestString = JsonConvert.SerializeObject(PlayerParams);
         byte[] requestData = new UTF8Encoding().GetBytes(requestString);
@@ -93,7 +94,7 @@ public class WebHandlerScript : MonoBehaviour
 
     IEnumerator SampleGetPlayersRoutine()
     {
-        UnityWebRequest request = new UnityWebRequest(BaseURL + "players", "GET");
+        UnityWebRequest request = new UnityWebRequest(BaseURL + "scores", "GET");
         request.downloadHandler = new DownloadHandlerBuffer();
 
         yield return request.SendWebRequest();
@@ -106,9 +107,23 @@ public class WebHandlerScript : MonoBehaviour
             List<Dictionary<string, string>> playerListRaw = JsonConvert.DeserializeObject<
                 List<Dictionary<string, string>>>(request.downloadHandler.text);
 
-            foreach(Dictionary<string, string> player in playerListRaw)
+            numberRanking = 1;
+            foreach (Dictionary<string, string> player in playerListRaw)
             {
-                Debug.Log($"Player Nickname: {player["nickname"]}");
+                Debug.Log($"Player Nickname: {player["user_name"]}");
+                if (player["user_name"] == currentPlayerName)
+                {
+                    if (int.Parse(player["score"]) > currentPlayerScore)
+                    {
+                        EditPlayer();
+                        break;
+                    }
+                }
+                else
+                {
+                    CreatePlayer();
+                }
+                numberRanking++;
             }
         }
         else
@@ -144,12 +159,12 @@ public class WebHandlerScript : MonoBehaviour
     {
         Dictionary<string, string> PlayerParams = new Dictionary<string, string>();
  
-        PlayerParams.Add("name", "YoMama");
+        PlayerParams.Add("score", currentPlayerScore.ToString());
 
         string requestString = JsonConvert.SerializeObject(PlayerParams);
         byte[] requestData = new UTF8Encoding().GetBytes(requestString);
 
-        UnityWebRequest request = new UnityWebRequest(BaseURL + "players/24", "PUT");
+        UnityWebRequest request = new UnityWebRequest(BaseURL + "scores/" + numberRanking.ToString(), "PUT");
         request.SetRequestHeader("Content-Type", "application/json");
         request.uploadHandler = new UploadHandlerRaw(requestData);
         request.downloadHandler = new DownloadHandlerBuffer();
