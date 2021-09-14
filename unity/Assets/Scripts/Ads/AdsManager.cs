@@ -8,7 +8,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 {
     public static AdsManager _AdsManager = null;
     public EventHandler<AdFinishEventArgs> onAdDone;
-
+    private bool adEnabled = true;
     public string GameID
     {
         get {
@@ -47,32 +47,47 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 	}
 	public void ShowInterstitialAd()
     {
-        if (Advertisement.IsReady(SampleInterstitial)){
-            Advertisement.Show(SampleInterstitial);
-        }
-        else {
-            Debug.Log("No Ads");
+        if (adEnabled)
+        {
+            if (Advertisement.IsReady(SampleInterstitial))
+            {
+                Advertisement.Show(SampleInterstitial);
+            }
+            else
+            {
+                Debug.Log("No Ads");
+            }
         }
     }
     public void ShowRewardedAd()
     {
-        if (Advertisement.IsReady(SampleRewarded))
+        if (adEnabled)
         {
-            Advertisement.Show(SampleRewarded);
-        }
-        else
-        {
-            Debug.Log("No Ads");
+            if (Advertisement.IsReady(SampleRewarded))
+            {
+                Advertisement.Show(SampleRewarded);
+            }
+            else
+            {
+                Debug.Log("No Ads");
+            }
         }
     }
     public void ShowBanner()
     {
-        StartCoroutine(ShowBannerRoutine());
+        if (adEnabled)
+            StartCoroutine(ShowBannerRoutine());
     }
 
-    private void HideBanner()
+    public void HideBanner(bool value)
     {
-        Advertisement.Banner.Hide();
+        if(!value)
+            Advertisement.Banner.Hide();
+    }
+
+    public void enableAds(bool value)
+    {
+        adEnabled = value;
     }
 
     IEnumerator ShowBannerRoutine()
