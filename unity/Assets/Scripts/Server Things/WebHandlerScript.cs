@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using UnityEngine.Networking;
 using Newtonsoft.Json;
@@ -8,6 +9,25 @@ using System.Text;
 
 public class WebHandlerScript : MonoBehaviour
 {
+    public string currentPlayerName;
+    public int currentPlayerScore;
+
+    public static WebHandlerScript webManager = null;
+
+    private void Awake()
+    {
+        if (webManager == null)
+        {
+            webManager = this;
+        }
+        else if (webManager != this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(this);
+        
+    }
+
     public string BaseURL
     {
         get { return "https://my-user-scoreboard.herokuapp.com/api/"; }

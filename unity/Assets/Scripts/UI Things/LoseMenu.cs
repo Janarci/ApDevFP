@@ -8,7 +8,7 @@ public class LoseMenu : MonoBehaviour
 	// Start is called before the first frame update
 	public void onRestartPress()
 	{
-		SceneManager.LoadSceneAsync("TestMap");
+		SceneManager.LoadSceneAsync("EzMap");
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}
 	public void onMainMenu()
