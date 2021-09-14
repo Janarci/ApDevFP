@@ -11,6 +11,8 @@ public class CoinHandler : MonoBehaviour
     [SerializeField] private Text coinText;
     [SerializeField] private Text scoreText;
 
+    public WebHandlerScript webManager;
+
 	private void Start()
 	{
         AdsManager._AdsManager.onAdDone += OnAdDone;
@@ -20,7 +22,7 @@ public class CoinHandler : MonoBehaviour
     {
         coinText.text = $"Gold: {coinTotal}";
         scoreText.text = $"Score: {scoreTotal}";
-
+        webManager.currentPlayerScore = scoreTotal;
     }
 
     public void getCoin()
