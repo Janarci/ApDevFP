@@ -14,12 +14,15 @@ public class HealthHandler : MonoBehaviour
     [SerializeField] private HealthScript health;
     [SerializeField] private CheatScript cheats;
 
+    private bool once = true;
+
     // Start is called before the first frame update
     void Start()
     {
         //cheats = GameObject.Find("CheatsManager").GetComponent<CheatScript>();
         currentHealth = healthMax;
         health.setHealthMax(healthMax);
+        once = true;
     }
 
     // Update is called once per frame
@@ -28,7 +31,11 @@ public class HealthHandler : MonoBehaviour
         health.updateHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            SceneManager.LoadSceneAsync("Lose");
+            if (once)
+            {
+                SceneManager.LoadSceneAsync("Lose");
+                once = false;
+            }
 
         }
         

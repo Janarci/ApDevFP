@@ -6,28 +6,24 @@ using UnityEngine.UI;
 
 public class LoseMenu : MonoBehaviour
 {
-	public WebHandlerScript webManager;
 	public Text playerName;
 	public Text playerScore;
 	public Text playerMsg;
 
-    // Start is called before the first frame update
-    private void Awake()
-    {
-		playerName.text = webManager.currentPlayerName;
-		playerScore.text = "Score Obtained: " + webManager.currentPlayerScore.ToString();
+	private bool once = false;
 
-		if (webManager.GetPlayers())
-		{
-			playerMsg.text = "New Personal Best!";
-		}
-        else
-        {
-			playerMsg.text = "You did great! Maybe you could do better?";
-		}
+    // Start is called before the first frame update
+    void Update()
+    {
+		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;
+		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
+		FindObjectOfType<WebHandlerScript>().isOnAfterGameMenu = true;
+		once = true;
+		Debug.Log("WorkinAwake");
+		
 	}
 
-    public void onRestartPress()
+	public void onRestartPress()
 	{
 		SceneManager.LoadSceneAsync("EzMap");
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
@@ -39,8 +35,12 @@ public class LoseMenu : MonoBehaviour
 	}
 	public void onExitPress()
 	{
+		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;
+		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
+		FindObjectOfType<WebHandlerScript>().isOnAfterGameMenu = true;
+		once = true;
 		Application.Quit();
-
+		Debug.Log("WorkinButon");
 	}
 
 }

@@ -1128,9 +1128,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 939540264}
-        m_TargetAssemblyTypeName: LoseMenu, Assembly-CSharp
-        m_MethodName: onExitPress
+      - m_Target: {fileID: 1432610679}
+        m_TargetAssemblyTypeName: WebHandlerScript, Assembly-CSharp
+        m_MethodName: GetPlayers
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1410,7 +1410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Personal Best!
+  m_Text: 
 --- !u!222 &668037306
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1905,7 +1905,6 @@ MonoBehaviour:
   webManager: {fileID: 1432610679}
   playerName: {fileID: 1918929062}
   playerScore: {fileID: 915338997}
-  playerMsg: {fileID: 668037305}
 --- !u!1 &1155873440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPlayerName: 
   currentPlayerScore: 0
+  playerMsg: {fileID: 668037305}
   numberRanking: 1
 --- !u!4 &1432610680
 Transform:

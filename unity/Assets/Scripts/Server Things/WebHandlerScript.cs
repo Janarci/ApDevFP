@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 using UnityEngine.Networking;
 using Newtonsoft.Json;
@@ -9,13 +9,12 @@ using System.Text;
 
 public class WebHandlerScript : MonoBehaviour
 {
-    public string currentPlayerName;
-    public int currentPlayerScore;
+    public string currentPlayerName = "";
+    public int currentPlayerScore = 0;
 
     public static WebHandlerScript webManager = null;
     public int numberRanking = 1;
-
-    private bool isPersonalBest = false;
+    public bool isOnAfterGameMenu = false;
 
     private void Awake()
     {
@@ -28,8 +27,17 @@ public class WebHandlerScript : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(this);
-        
     }
+
+    private void Update()
+    {
+        if (isOnAfterGameMenu)
+        {
+            GetPlayers();
+            isOnAfterGameMenu = false;
+        }
+    }
+
 
     public string BaseURL
     {
@@ -42,18 +50,10 @@ public class WebHandlerScript : MonoBehaviour
         Debug.Log("Creating Player...");
     }
 
-    public bool GetPlayers()
+    public void GetPlayers()
     {
         StartCoroutine(SampleGetPlayersRoutine());
         Debug.Log("Getting Players...");
-        if (isPersonalBest)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
     }
 
     public void GetOnePlayer()
@@ -104,7 +104,7 @@ public class WebHandlerScript : MonoBehaviour
 
     IEnumerator SampleGetPlayersRoutine()
     {
-        UnityWebRequest request = new UnityWebRequest(BaseURL + "scores", "GET");
+        UnityWebRequest request = new UnityWebRequest(BaseURL + "get_scores/14", "GET");
         request.downloadHandler = new DownloadHandlerBuffer();
 
         yield return request.SendWebRequest();
@@ -118,28 +118,30 @@ public class WebHandlerScript : MonoBehaviour
                 List<Dictionary<string, string>>>(request.downloadHandler.text);
 
             numberRanking = 1;
+            bool playerFound = false;
             foreach (Dictionary<string, string> player in playerListRaw)
             {
                 Debug.Log($"Player Nickname: {player["user_name"]}");
                 if (player["user_name"] == currentPlayerName)
                 {
-                    if (int.Parse(player["score"]) > currentPlayerScore)
+                    playerFound = true;
+                    if (int.Parse(player["score"]) < currentPlayerScore)
                     {
                         EditPlayer();
-                        isPersonalBest = true;
-                        break;
+                        FindObjectOfType<LoseMenu>().playerMsg.text = "New Personal Best!";
                     }
                     else
                     {
-                        isPersonalBest = false;
+                        FindObjectOfType<LoseMenu>().playerMsg.text = "You did great! Maybe you could do better?";
                     }
-                }
-                else
-                {
-                    CreatePlayer();
-                    isPersonalBest = true;
+                    break;
                 }
                 numberRanking++;
+            }
+            if(!playerFound)
+            {
+                CreatePlayer();
+                FindObjectOfType<LoseMenu>().playerMsg.text = "New Personal Best!";
             }
         }
         else
@@ -180,7 +182,7 @@ public class WebHandlerScript : MonoBehaviour
         string requestString = JsonConvert.SerializeObject(PlayerParams);
         byte[] requestData = new UTF8Encoding().GetBytes(requestString);
 
-        UnityWebRequest request = new UnityWebRequest(BaseURL + "scores/" + numberRanking.ToString(), "PUT");
+        UnityWebRequest request = new UnityWebRequest(BaseURL + "get_scores/14/" + numberRanking.ToString(), "PUT");
         request.SetRequestHeader("Content-Type", "application/json");
         request.uploadHandler = new UploadHandlerRaw(requestData);
         request.downloadHandler = new DownloadHandlerBuffer();
