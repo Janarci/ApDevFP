@@ -46,7 +46,7 @@ public class SpawnManager : MonoBehaviour
 
         if (isBossSpawner)
         {
-            if (INIT_TIME >= SPAWN_INTERVAL)
+            if (INIT_TIME >= BOSS_INTERVAL1)
             {
                 INIT_TIME = Random.Range(0.0f, 3.67f); ;
                 spawnDragon();
