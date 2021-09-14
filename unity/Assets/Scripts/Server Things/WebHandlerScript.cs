@@ -15,6 +15,8 @@ public class WebHandlerScript : MonoBehaviour
     public static WebHandlerScript webManager = null;
     public int numberRanking = 1;
 
+    private bool isPersonalBest = false;
+
     private void Awake()
     {
         if (webManager == null)
@@ -40,10 +42,18 @@ public class WebHandlerScript : MonoBehaviour
         Debug.Log("Creating Player...");
     }
 
-    public void GetPlayers()
+    public bool GetPlayers()
     {
         StartCoroutine(SampleGetPlayersRoutine());
         Debug.Log("Getting Players...");
+        if (isPersonalBest)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void GetOnePlayer()
@@ -116,12 +126,18 @@ public class WebHandlerScript : MonoBehaviour
                     if (int.Parse(player["score"]) > currentPlayerScore)
                     {
                         EditPlayer();
+                        isPersonalBest = true;
                         break;
+                    }
+                    else
+                    {
+                        isPersonalBest = false;
                     }
                 }
                 else
                 {
                     CreatePlayer();
+                    isPersonalBest = true;
                 }
                 numberRanking++;
             }

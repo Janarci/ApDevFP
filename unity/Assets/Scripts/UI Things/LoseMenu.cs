@@ -9,14 +9,22 @@ public class LoseMenu : MonoBehaviour
 	public WebHandlerScript webManager;
 	public Text playerName;
 	public Text playerScore;
+	public Text playerMsg;
 
     // Start is called before the first frame update
     private void Awake()
     {
 		playerName.text = webManager.currentPlayerName;
-		playerScore.text = webManager.currentPlayerScore.ToString();
+		playerScore.text = "Score Obtained: " + webManager.currentPlayerScore.ToString();
 
-		webManager.GetPlayers();
+		if (webManager.GetPlayers())
+		{
+			playerMsg.text = "New Personal Best!";
+		}
+        else
+        {
+			playerMsg.text = "You did great! Maybe you could do better?";
+		}
 	}
 
     public void onRestartPress()

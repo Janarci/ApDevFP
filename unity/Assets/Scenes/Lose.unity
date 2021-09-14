@@ -1544,6 +1544,7 @@ MonoBehaviour:
   webManager: {fileID: 197814876}
   playerName: {fileID: 1683542189}
   playerScore: {fileID: 276805736}
+  playerMsg: {fileID: 1896621668}
 --- !u!4 &1138199738
 Transform:
   m_ObjectHideFlags: 0
@@ -2081,7 +2082,7 @@ GameObject:
   - component: {fileID: 1518088538}
   - component: {fileID: 1518088537}
   m_Layer: 5
-  m_Name: Restart
+  m_Name: AfterMsgPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
