@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private int stage = 1;
     [SerializeField] private GameObject fairyTemplate1;
     [SerializeField] private GameObject fairyTemplate2;
     [SerializeField] private GameObject fairyTemplate3;
@@ -29,19 +28,22 @@ public class SpawnManager : MonoBehaviour
     {
         //if (roundStart)
         //{
-            INIT_TIME += Time.deltaTime;
+        INIT_TIME += Time.deltaTime;
 
-            if (stage == 1)
+            if (FindObjectOfType<LevelHandler>().level == 1)
             {
                 SPAWN_INTERVAL = 16.0f;
+                BOSS_INTERVAL1 = 20.0f;
             }
-            if (stage == 2)
+            else if (FindObjectOfType<LevelHandler>().level == 2)
             {
-                SPAWN_INTERVAL = 2.5f;
+                SPAWN_INTERVAL = 14.0f;
+                BOSS_INTERVAL1 = 18.5f;
             }
-            if (stage == 3)
+            else if (FindObjectOfType<LevelHandler>().level == 3)
             {
-                SPAWN_INTERVAL = 1.5f;
+                SPAWN_INTERVAL = 9.5f;
+                BOSS_INTERVAL1 = 15.0f;
             }
 
         if (isBossSpawner)

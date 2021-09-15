@@ -16,18 +16,20 @@ public class MainMenuScript : MonoBehaviour
 	{
 		if (unlockLevels.EzDone())
 		{
-			midButton.gameObject.SetActive(true);
+			midButton.interactable = true;
 		}
 		else
-			midButton.gameObject.SetActive(false);
-
+		{
+			midButton.interactable = false;
+		}
 		if (unlockLevels.MidDone())
 		{
-			hardButton.gameObject.SetActive(true);
+			hardButton.interactable = true;
 		}
 		else
-			hardButton.gameObject.SetActive(false);
-
+		{
+			hardButton.interactable = false;
+		}
 
 	}
 	public void onEzPress()

@@ -23,7 +23,18 @@ public class LoseMenu : MonoBehaviour
 
     public void onRestartPress()
 	{
-		SceneManager.LoadSceneAsync("EzMap");
+		if (FindObjectOfType<LevelHandler>().level == 1)
+		{
+			SceneManager.LoadSceneAsync("EzMap");
+		}
+		else if (FindObjectOfType<LevelHandler>().level == 2)
+		{
+			SceneManager.LoadSceneAsync("MidMap");
+		}
+		else if (FindObjectOfType<LevelHandler>().level == 3)
+		{
+			SceneManager.LoadSceneAsync("HardMap");
+		}
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}
 	public void onMainMenu()
