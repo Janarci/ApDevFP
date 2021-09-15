@@ -229,7 +229,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1138199737}
         m_TargetAssemblyTypeName: LoseMenu, Assembly-CSharp
-        m_MethodName: onExitPress
+        m_MethodName: onLeaderBoardPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0.30936277, b: 0.30936277, a: 1}
+  m_Color: {r: 0.7587352, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1357,7 +1357,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: 'Post Score to
+
+    Leaderboards!'
 --- !u!222 &1001526811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2671,7 +2673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.37936097, g: 0.47804692, b: 0.5188679, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2898,7 +2900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Defeated!
+  m_Text: ' Defeated! '
 --- !u!222 &2052644245
 CanvasRenderer:
   m_ObjectHideFlags: 0

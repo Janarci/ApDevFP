@@ -10,20 +10,13 @@ public class LoseMenu : MonoBehaviour
 	public Text playerScore;
 	public Text playerMsg;
 
-	private bool once = false;
-
-    // Start is called before the first frame update
-    void Update()
+    private void Start()
     {
 		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;
 		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
-		FindObjectOfType<WebHandlerScript>().isOnAfterGameMenu = true;
-		once = true;
-		Debug.Log("WorkinAwake");
-		
 	}
 
-	public void onRestartPress()
+    public void onRestartPress()
 	{
 		SceneManager.LoadSceneAsync("EzMap");
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
@@ -33,12 +26,11 @@ public class LoseMenu : MonoBehaviour
 		SceneManager.LoadSceneAsync("MainMenu");
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}
-	public void onExitPress()
+	public void onLeaderBoardPress()
 	{
 		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;
 		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
 		FindObjectOfType<WebHandlerScript>().isOnAfterGameMenu = true;
-		once = true;
 		Application.Quit();
 		Debug.Log("WorkinButon");
 	}

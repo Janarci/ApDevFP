@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 638321292}
   - component: {fileID: 638321295}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: LB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,9 +1128,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1432610679}
-        m_TargetAssemblyTypeName: WebHandlerScript, Assembly-CSharp
-        m_MethodName: GetPlayers
+      - m_Target: {fileID: 939540264}
+        m_TargetAssemblyTypeName: LoseMenu, Assembly-CSharp
+        m_MethodName: onLeaderBoardPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1902,9 +1902,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca9c57e7a6fcd14daf44ade91fcd4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  webManager: {fileID: 1432610679}
   playerName: {fileID: 1918929062}
   playerScore: {fileID: 915338997}
+  playerMsg: {fileID: 0}
 --- !u!1 &1155873440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,8 +2029,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPlayerName: 
   currentPlayerScore: 0
-  playerMsg: {fileID: 668037305}
   numberRanking: 1
+  isOnAfterGameMenu: 0
 --- !u!4 &1432610680
 Transform:
   m_ObjectHideFlags: 0
@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7735849, g: 0.70269465, b: 0.56559277, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2459,7 +2459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0.30936277, b: 0.30936277, a: 1}
+  m_Color: {r: 0.7671678, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2474,12 +2474,14 @@ MonoBehaviour:
     m_MinSize: 1
     m_MaxSize: 100
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: 'Post Score to
+
+    Leaderboards!'
 --- !u!222 &1889853774
 CanvasRenderer:
   m_ObjectHideFlags: 0

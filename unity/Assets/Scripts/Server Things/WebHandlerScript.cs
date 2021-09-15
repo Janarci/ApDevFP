@@ -33,7 +33,7 @@ public class WebHandlerScript : MonoBehaviour
     {
         if (isOnAfterGameMenu)
         {
-            GetPlayers();
+            CreatePlayer();
             isOnAfterGameMenu = false;
         }
     }
@@ -48,6 +48,7 @@ public class WebHandlerScript : MonoBehaviour
     {
         StartCoroutine(SamplePostRoutine());
         Debug.Log("Creating Player...");
+        FindObjectOfType<LoseMenu>().playerMsg.text = "New Personal Best!";
     }
 
     public void GetPlayers()
