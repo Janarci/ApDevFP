@@ -10,10 +10,15 @@ public class LoseMenu : MonoBehaviour
 	public Text playerScore;
 	public Text playerMsg;
 
-    private void Start()
+    private void Update()
     {
 		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;
 		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
+		//if defet
+		//sad msg
+
+		//if win
+		//unlock level msg
 	}
 
     public void onRestartPress()
