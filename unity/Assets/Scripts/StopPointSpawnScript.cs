@@ -14,6 +14,8 @@ public class StopPointSpawnScript : MonoBehaviour
     [SerializeField] private CampUIBehavior CampManager;
     [SerializeField] private GameObject spawnHandler;
     [SerializeField] private CoinHandler coinHandler;
+    [SerializeField] private LevelHandler unlockLevel;
+
     
 
     private bool triggerOnce = false;

@@ -8,6 +8,8 @@ public class CheatScript : MonoBehaviour
     private bool infMana;
     private bool infHealth;
     private bool infMoney;
+
+
     private static CheatScript CheatScriptInstance;
     private void Awake()
 	{
@@ -69,5 +71,7 @@ public class CheatScript : MonoBehaviour
     {
         return infMoney;
     }
+
+    
 
 }
