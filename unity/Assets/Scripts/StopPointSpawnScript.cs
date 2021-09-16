@@ -105,6 +105,15 @@ public class StopPointSpawnScript : MonoBehaviour
                     Destroy(this);
                     FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
                     SceneManager.LoadSceneAsync("Win");
+                    if (FindObjectOfType<LevelHandler>().level == 1)
+                    {
+                        FindObjectOfType<LevelHandler>().EzDone();
+                    }
+                    else if (FindObjectOfType<LevelHandler>().level == 2)
+                    {
+                        FindObjectOfType<LevelHandler>().MidDone();
+                    }
+                    FindObjectOfType<LevelHandler>().levelWin = true;
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.SHOP)

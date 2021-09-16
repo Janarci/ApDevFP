@@ -8,7 +8,7 @@ public class LevelHandler : MonoBehaviour
     [SerializeField] private bool ezDone = true;
     [SerializeField] private bool midDone = true;
     public int level = 1;
-
+    public bool levelWin = false;
 
     private void Awake()
     {
