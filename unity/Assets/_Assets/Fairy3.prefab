@@ -231,9 +231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 8199203363468419966}
-  damage: {fileID: 0}
-  target: {fileID: 0}
-  player: {fileID: 0}
   attackRadius: 7
 --- !u!114 &8199203363468419961
 MonoBehaviour:
@@ -248,9 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fairyType: 3
-  Spellhandler: {fileID: 0}
-  coin: {fileID: 0}
-  sfx: {fileID: 0}
+  dragonType: 0
+  shield: 0
 --- !u!195 &8199203363468419954
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -261,7 +257,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
