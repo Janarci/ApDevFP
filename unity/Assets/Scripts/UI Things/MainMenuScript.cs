@@ -81,10 +81,6 @@ public class MainMenuScript : MonoBehaviour
 		Application.Quit();
 
 	}
-	public void test()
-	{
 
-		unlockLevels.level = 1;
-	}
 
 }

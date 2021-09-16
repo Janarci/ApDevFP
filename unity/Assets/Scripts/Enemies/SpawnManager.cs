@@ -4,23 +4,45 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] private GameObject fairyTemplate1;
-    [SerializeField] private GameObject fairyTemplate2;
-    [SerializeField] private GameObject fairyTemplate3;
+    private GameObject fairyTemplate1;
+    private GameObject fairyTemplate2;
+    private GameObject fairyTemplate3;
+    private Material fairymat1;
+    private Material fairymat2;
+    private Material fairymat3;
     private float SPAWN_INTERVAL = 3.0f;
     private float INIT_TIME = 10.0f;
 
     public bool isBossSpawner = false;
     public float BOSS_INTERVAL1 = 20.0f;
 
+    public AssetBundleManager assetManager;
     //public bool roundStart = false;
+    private void Awake()
+    {
+        assetManager = GameObject.Find("AssetManager").GetComponent<AssetBundleManager>();
+        AssetBundle test = assetManager.LoadBundle("mobs");
 
+    }
     // Start is called before the first frame update
     void Start()
     {
-        this.fairyTemplate1.SetActive(false);
-        this.fairyTemplate2.SetActive(false);
-        this.fairyTemplate3.SetActive(false);
+        fairymat1 = Resources.Load<Material>("HuaYao_01 1");
+        fairymat2 = Resources.Load<Material>("HuaYao_02 1");
+        fairymat3 = Resources.Load<Material>("HuaYao_03 1");
+        if (isBossSpawner)
+        {
+            fairyTemplate1 = assetManager.GetAsset<GameObject>("mobs", "DragonBoss");
+            fairyTemplate2 = assetManager.GetAsset<GameObject>("mobs", "DragonBoss2");
+            fairyTemplate3 = assetManager.GetAsset<GameObject>("mobs", "DragonBoss3");
+        }
+        else
+        {
+            fairyTemplate1 = assetManager.GetAsset<GameObject>("mobs", "Fairy1");
+            fairyTemplate2 = assetManager.GetAsset<GameObject>("mobs", "Fairy2");
+            fairyTemplate3 = assetManager.GetAsset<GameObject>("mobs", "Fairy3");
+
+        }
     }
 
     // Update is called once per frame
@@ -99,18 +121,21 @@ public class SpawnManager : MonoBehaviour
         {
 
             fairyClone = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, this.fairyTemplate1.transform.rotation, this.transform);
+            fairyClone.GetComponentInChildren<Renderer>().material = fairymat1;
             fairyClone.SetActive(true);
         }
         else if (fairyType == 2)
         {
 
             fairyClone = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, this.fairyTemplate2.transform.rotation, this.transform);
+            fairyClone.GetComponentInChildren<Renderer>().material = fairymat2;
             fairyClone.SetActive(true);
         }
         else if (fairyType == 3)
         {
 
             fairyClone = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, this.fairyTemplate3.transform.rotation, this.transform);
+            fairyClone.GetComponentInChildren<Renderer>().material = fairymat3;
             fairyClone.SetActive(true);
         }
         

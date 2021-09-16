@@ -8,9 +8,9 @@ public class TapDestroy : MonoBehaviour
     [SerializeField] private int dragonType;
     [SerializeField] private bool shield;
     //[SerializeField] private GameObject SpellManager;
-    [SerializeField] private SpellHandler Spellhandler;
-    [SerializeField] private CoinHandler coin;
-    public sfxHandler sfx;
+    private SpellHandler Spellhandler;
+    private CoinHandler coin;
+    private sfxHandler sfx;
 
     bool killed = false;
     private int currentSpell;
@@ -18,8 +18,17 @@ public class TapDestroy : MonoBehaviour
 	private void Awake()
 	{
         sfx = GameObject.Find("SpellAudioSource").GetComponent<sfxHandler>();
-	}
-	public void destroyObj()
+        Spellhandler = GameObject.Find("SpellManager").GetComponent<SpellHandler>();
+        coin = GameObject.Find("CoinManager").GetComponent<CoinHandler>();
+
+        if (shield)
+        {
+            this.gameObject.GetComponentInChildren<Renderer>().material = Resources.Load<Material>("Glass 3"); ;
+
+        }
+
+    }
+    public void destroyObj()
     {
         currentSpell = Spellhandler.currentSpell();
         if (Spellhandler.getCurrentMana() >= 20 && !killed)

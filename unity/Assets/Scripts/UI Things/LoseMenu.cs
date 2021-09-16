@@ -23,6 +23,7 @@ public class LoseMenu : MonoBehaviour
 
     public void onRestartPress()
 	{
+		AssetBundle.UnloadAllAssetBundles(true);
 		if (FindObjectOfType<LevelHandler>().level == 1)
 		{
 			SceneManager.LoadSceneAsync("EzMap");
@@ -39,6 +40,7 @@ public class LoseMenu : MonoBehaviour
 	}
 	public void onMainMenu()
 	{
+		AssetBundle.UnloadAllAssetBundles(true);
 		SceneManager.LoadSceneAsync("MainMenu");
 		FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
 	}

@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class DragonPathfind : MonoBehaviour
 {
 
-    [SerializeField] private Transform player;
-    [SerializeField] private HealthHandler damage;
+    private Transform player;
+    private HealthHandler damage;
 
     public float attackRadius = 3f;
     Transform interactionTransform;
@@ -19,22 +19,22 @@ public class DragonPathfind : MonoBehaviour
 
     private void Awake()
 	{
-        interactionTransform = this.gameObject.transform;
-
-        agent = this.GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
-	}
+        player = GameObject.Find("Player").GetComponent<Transform>();
+        damage = GameObject.Find("HealthManager").GetComponent<HealthHandler>();
+    }
 
 	// Start is called before the first frame update
 	void Start()
     {
+        interactionTransform = this.gameObject.transform;
+        agent = this.GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
         setDestination();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (canInteract(player, interactionTransform))
         {
             StartCoroutine(attackCycle());
@@ -75,7 +75,7 @@ public class DragonPathfind : MonoBehaviour
         animator.SetBool("Die", true);
         agent.isStopped = true;
         this.isDead = true;
-       StopAllCoroutines();
+        StopAllCoroutines();
 
     }
     public void damagePlayer()

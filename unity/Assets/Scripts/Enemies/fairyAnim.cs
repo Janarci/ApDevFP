@@ -6,14 +6,21 @@ using UnityEngine.AI;
 public class fairyAnim : MonoBehaviour
 {
     [SerializeField] private Animation anim;
-    [SerializeField] private HealthHandler damage;
-    [SerializeField] private Transform target;
-    [SerializeField] private Transform player;
+    private HealthHandler damage;
+    private Transform player;
     private bool reachAgent = false;
     private bool isDead = false;
     Transform interactionTransform;
     private NavMeshAgent agent;
     public float attackRadius = 3f;
+
+
+	private void Awake()
+	{
+        player = GameObject.Find("Player").GetComponent<Transform>();
+        damage = GameObject.Find("HealthManager").GetComponent<HealthHandler>();
+
+    }
 
     void Start()
     {
@@ -64,7 +71,7 @@ public class fairyAnim : MonoBehaviour
 
     private void destination()
     {
-        Vector3 TargetVec = target.transform.position;
+        Vector3 TargetVec = player.transform.position;
         agent.SetDestination(TargetVec);
     }
 
