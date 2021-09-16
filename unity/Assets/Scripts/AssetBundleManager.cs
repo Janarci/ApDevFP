@@ -12,7 +12,7 @@ public class AssetBundleManager : MonoBehaviour
         {
 #if UNITY_EDITOR
             return Application.streamingAssetsPath;
-#else
+#elif UNITY_ANDROID
             return Application.persistentDataPath;
 #endif
         }
