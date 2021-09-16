@@ -43,6 +43,7 @@ public class SpawnManager : MonoBehaviour
             fairyTemplate3 = assetManager.GetAsset<GameObject>("mobs", "Fairy3");
 
         }
+
     }
 
     // Update is called once per frame
@@ -68,7 +69,7 @@ public class SpawnManager : MonoBehaviour
                 BOSS_INTERVAL1 = 15.0f;
             }
 
-        if (isBossSpawner)
+        if (isBossSpawner == true)
         {
             if (INIT_TIME >= BOSS_INTERVAL1)
             {
@@ -76,12 +77,12 @@ public class SpawnManager : MonoBehaviour
                 spawnDragon();
             }
         }
-        else
+        else if(isBossSpawner == false)
         {
             if (INIT_TIME >= SPAWN_INTERVAL)
             {
                 INIT_TIME = Random.Range(0.0f, 3.6f); ;
-                spawnFairy();
+               spawnFairy();
             }
         }
         //}

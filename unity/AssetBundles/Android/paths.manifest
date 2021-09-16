@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 2393701179
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4173f368b782e7f4b5dd90c3ea793471
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dbbaabb817bb63ce8c34fe3ed1d754be
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2879256a7d0d34243a76437972d156b7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 38fef9f37874fba429817ba3b7dc8f49, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 44a96190cc8983c43be1ca0505e64d5f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0dae31606babc8d449c9cb3b6fb8a6bf, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Assets/AllPathsforEasyLevel.prefab
+Dependencies:
+- D:/Git/testunity/unity/AssetBundles/Android/mobs
