@@ -35,27 +35,22 @@ public class MainMenuScript : MonoBehaviour
 	public void onEzPress()
 	{
 		unlockLevels.level = 1;
+		FindObjectOfType<LevelHandler>().isCheating = false;
 		SceneManager.LoadSceneAsync("EzMap");
 	}
 	public void onMidPress()
 	{
 		unlockLevels.level = 2;
+		FindObjectOfType<LevelHandler>().isCheating = false;
 		SceneManager.LoadSceneAsync("AverageMap");
 	}
 	public void onHardPress()
 	{
 		unlockLevels.level = 3;
+		FindObjectOfType<LevelHandler>().isCheating = false;
 		SceneManager.LoadSceneAsync("HardMap");
 	}
 	public void MidMapToggle(bool value)
-	{
-		if (value)
-		{
-			sceneName = "EzMap";
-		}
-
-	}
-	public void HardMapToggle(bool value)
 	{
 		if (value)
 		{
@@ -63,7 +58,7 @@ public class MainMenuScript : MonoBehaviour
 		}
 
 	}
-	public void ezMapToggle(bool value)
+	public void HardMapToggle(bool value)
 	{
 		if (value)
 		{
@@ -71,9 +66,18 @@ public class MainMenuScript : MonoBehaviour
 		}
 
 	}
+	public void ezMapToggle(bool value)
+	{
+		if (value)
+		{
+			sceneName = "EzMap";
+		}
+
+	}
 	public void newScene()
 	{
-		SceneManager.LoadSceneAsync("New Scene");
+		FindObjectOfType<LevelHandler>().isCheating = true;
+		SceneManager.LoadSceneAsync(sceneName);
 
 	}
 	public void onExitPress()

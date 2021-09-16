@@ -9,6 +9,7 @@ public class LevelHandler : MonoBehaviour
     [SerializeField] private bool midDone = true;
     public int level = 1;
     public bool levelWin = false;
+    public bool isCheating = false;
 
     private void Awake()
     {

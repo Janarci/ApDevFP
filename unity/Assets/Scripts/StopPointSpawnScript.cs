@@ -105,11 +105,11 @@ public class StopPointSpawnScript : MonoBehaviour
                     Destroy(this);
                     FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
                     SceneManager.LoadSceneAsync("Win");
-                    if (FindObjectOfType<LevelHandler>().level == 1)
+                    if (FindObjectOfType<LevelHandler>().level == 1 && FindObjectOfType<LevelHandler>().isCheating == false)
                     {
                         FindObjectOfType<LevelHandler>().EzDone();
                     }
-                    else if (FindObjectOfType<LevelHandler>().level == 2)
+                    else if (FindObjectOfType<LevelHandler>().level == 2 && FindObjectOfType<LevelHandler>().isCheating == false)
                     {
                         FindObjectOfType<LevelHandler>().MidDone();
                     }
