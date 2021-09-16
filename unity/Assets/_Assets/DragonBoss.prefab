@@ -60,9 +60,6 @@ MonoBehaviour:
   fairyType: 0
   dragonType: 1
   shield: 0
-  Spellhandler: {fileID: 0}
-  coin: {fileID: 0}
-  sfx: {fileID: 0}
 --- !u!1 &5225732964995100547
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,9 +171,6 @@ MonoBehaviour:
   fairyType: 0
   dragonType: 0
   shield: 1
-  Spellhandler: {fileID: 0}
-  coin: {fileID: 0}
-  sfx: {fileID: 0}
 --- !u!1 &5225732965641812133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,7 +3596,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 2.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3626,8 +3620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adeff91fad65fb408b8c26f2c40fb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  damage: {fileID: 0}
   attackRadius: 15
 --- !u!1 &5225732965641896075
 GameObject:
