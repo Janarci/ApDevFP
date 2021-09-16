@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4294646923
+CRC: 1921195117
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,5 +7,4 @@ AssetBundleManifest:
       Dependencies: {}
     Info_1:
       Name: paths
-      Dependencies:
-        Dependency_0: mobs
+      Dependencies: {}
