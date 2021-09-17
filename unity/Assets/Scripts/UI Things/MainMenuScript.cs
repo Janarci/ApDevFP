@@ -54,6 +54,7 @@ public class MainMenuScript : MonoBehaviour
 	{
 		if (value)
 		{
+			unlockLevels.level = 2;
 			sceneName = "AverageMap";
 		}
 
@@ -62,6 +63,7 @@ public class MainMenuScript : MonoBehaviour
 	{
 		if (value)
 		{
+			unlockLevels.level = 3;
 			sceneName = "HardMap";
 		}
 
@@ -70,6 +72,7 @@ public class MainMenuScript : MonoBehaviour
 	{
 		if (value)
 		{
+			unlockLevels.level = 1;
 			sceneName = "EzMap";
 		}
 
