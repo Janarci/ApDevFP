@@ -77,7 +77,7 @@ public class LoseMenu : MonoBehaviour
 		}
 		else if (levelHandler.level == 2)
 		{
-			SceneManager.LoadSceneAsync("MidMap");
+			SceneManager.LoadSceneAsync("AverageMap");
 		}
 		else if (levelHandler.level == 3)
 		{
