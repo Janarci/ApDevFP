@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
-	private string sceneName;
+	private string sceneName = "EzMap";
 	[SerializeField] private LevelHandler unlockLevels;
 	[SerializeField] private Button midButton;
 	[SerializeField] private Button hardButton;

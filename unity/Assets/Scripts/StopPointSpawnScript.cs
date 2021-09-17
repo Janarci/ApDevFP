@@ -16,7 +16,6 @@ public class StopPointSpawnScript : MonoBehaviour
     [SerializeField] private CoinHandler coinHandler;
     [SerializeField] private LevelHandler unlockLevel;
 
-    
 
     private bool triggerOnce = false;
 
@@ -121,7 +120,10 @@ public class StopPointSpawnScript : MonoBehaviour
                 if (!spawnUIonce)
                 {
                     FindObjectOfType<AdsManager>().ShowRewardedAd();
+                    
                     ShopManager.ExitShopClicked();
+                    if (FindObjectOfType<AdsManager>().internet)
+                        FindObjectOfType<ClaimAd>().popup.SetActive(true);
                     spawnUIonce = true;
                     triggerOnce = false;
                     Destroy(this);
@@ -132,7 +134,10 @@ public class StopPointSpawnScript : MonoBehaviour
                 if (!spawnUIonce)
                 {
                     FindObjectOfType<AdsManager>().ShowRewardedAd();
+                    
                     CampManager.startResting();
+                    if (FindObjectOfType<AdsManager>().internet)
+                        FindObjectOfType<ClaimAd>().popup.SetActive(true);
                     spawnUIonce = true;
                     triggerOnce = false;
                     Destroy(this);

@@ -87,10 +87,6 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
             {
                 Debug.Log("No Ads");
             }
-            if (internet)
-            {
-                GameObject.Find("ClaimAdPopUp").SetActive(true);
-            }
         }
         
     }
