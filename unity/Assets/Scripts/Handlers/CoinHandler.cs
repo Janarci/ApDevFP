@@ -54,12 +54,15 @@ public class CoinHandler : MonoBehaviour
 
     public void OnAdDone(object sender, AdFinishEventArgs args)
     {
+        
         if (args.PlacementID == AdsManager.SampleRewarded)
         {
-            if (args.AdResult == ShowResult.Finished) {
-                setGoldTotal(99999);
+            if (args.AdResult == ShowResult.Finished)
+            {
+                coinTotal += 300;
                 Debug.Log("ad finish");
             }
         }
+        
     }
 }
