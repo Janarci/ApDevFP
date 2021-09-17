@@ -9,7 +9,7 @@ public class NotifManager : MonoBehaviour
 
     private static NotifManager NotifManagerInstance;
 
-	public void SendTestNotif()
+	public void SendNotifQuit()
 	{
 		string notif_Title = "The kingdom needs you!";
 
@@ -18,6 +18,18 @@ public class NotifManager : MonoBehaviour
 		DateTime firetime = DateTime.Now.AddSeconds(5);
 
 		AndroidNotification notif = new AndroidNotification(notif_Title, notif_Message, firetime);
+
+		AndroidNotificationCenter.SendNotification(notif, "default");
+	}
+	public void SendTestNotif()
+	{
+		string notif_Title = "dev test";
+
+		string notif_Message = "This is a test notif";
+
+		DateTime firetime = DateTime.Now.AddSeconds(5);
+
+		AndroidNotification notif = new AndroidNotification(notif_Title, notif_Message, DateTime.Now);
 
 		AndroidNotificationCenter.SendNotification(notif, "default");
 	}
@@ -58,7 +70,7 @@ public class NotifManager : MonoBehaviour
 	}
 	private void OnApplicationQuit()
 	{
-		SendTestNotif();
+		SendNotifQuit();
 		Debug.Log("Application ending after " + Time.time + " seconds");
 
 	}
