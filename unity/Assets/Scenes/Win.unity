@@ -1905,6 +1905,7 @@ MonoBehaviour:
   playerName: {fileID: 1918929062}
   playerScore: {fileID: 915338997}
   playerMsg: {fileID: 668037305}
+  leaderboardsButton: {fileID: 638321292}
 --- !u!1 &1155873440
 GameObject:
   m_ObjectHideFlags: 0

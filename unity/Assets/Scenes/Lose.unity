@@ -1500,6 +1500,7 @@ MonoBehaviour:
   playerName: {fileID: 1683542189}
   playerScore: {fileID: 276805736}
   playerMsg: {fileID: 1896621668}
+  leaderboardsButton: {fileID: 174172045}
 --- !u!4 &1138199738
 Transform:
   m_ObjectHideFlags: 0

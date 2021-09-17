@@ -9,6 +9,7 @@ public class LoseMenu : MonoBehaviour
 	public Text playerName;
 	public Text playerScore;
 	public Text playerMsg;
+	public Button leaderboardsButton;
 	private float INIT_TIME = 0;
 
     private void Update()
@@ -39,6 +40,16 @@ public class LoseMenu : MonoBehaviour
         else
         {
 			playerMsg.text = "Better Luck Next Time!";
+		}
+
+		if (FindObjectOfType<AdsManager>().internet)
+        {
+			leaderboardsButton.interactable = true;
+        }
+        else
+        {
+			leaderboardsButton.interactable = false;
+
 		}
 
 		if (INIT_TIME > 10.0f)
