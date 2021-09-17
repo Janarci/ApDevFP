@@ -123,7 +123,13 @@ public class StopPointSpawnScript : MonoBehaviour
                     
                     ShopManager.ExitShopClicked();
                     if (FindObjectOfType<AdsManager>().internet)
+                    {
                         FindObjectOfType<ClaimAd>().popup.SetActive(true);
+                    }
+                    else if (!FindObjectOfType<AdsManager>().internet && FindObjectOfType<AdsManager>().adEnabled == false)
+                    {
+                        FindObjectOfType<ClaimAd>().popup.SetActive(true);
+                    }
                     spawnUIonce = true;
                     triggerOnce = false;
                     Destroy(this);
@@ -137,7 +143,13 @@ public class StopPointSpawnScript : MonoBehaviour
                     
                     CampManager.startResting();
                     if (FindObjectOfType<AdsManager>().internet)
+                    {
                         FindObjectOfType<ClaimAd>().popup.SetActive(true);
+                    }
+                    else if (!FindObjectOfType<AdsManager>().internet && FindObjectOfType<AdsManager>().adEnabled == false)
+                    {
+                        FindObjectOfType<ClaimAd>().popup.SetActive(true);
+                    }
                     spawnUIonce = true;
                     triggerOnce = false;
                     Destroy(this);

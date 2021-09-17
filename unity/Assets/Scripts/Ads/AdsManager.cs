@@ -8,7 +8,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 {
     public static AdsManager _AdsManager = null;
     public EventHandler<AdFinishEventArgs> onAdDone;
-    private bool adEnabled = true;
+    public bool adEnabled = true;
     public bool internet = false;
     public string GameID
     {
