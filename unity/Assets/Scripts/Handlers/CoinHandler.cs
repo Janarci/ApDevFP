@@ -59,7 +59,6 @@ public class CoinHandler : MonoBehaviour
         {
             if (args.AdResult == ShowResult.Finished)
             {
-                coinTotal += 300;
                 Debug.Log("ad finish");
             }
         }

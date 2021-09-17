@@ -9,6 +9,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
     public static AdsManager _AdsManager = null;
     public EventHandler<AdFinishEventArgs> onAdDone;
     private bool adEnabled = true;
+    public bool internet = false;
     public string GameID
     {
         get {
@@ -29,8 +30,23 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
             Destroy(gameObject);
         }
         DontDestroyOnLoad(this);
+        
+        
         //true for testing false for publish
         Advertisement.Initialize(GameID, true);
+
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            adEnabled = false;
+            internet = false;
+            Debug.Log("Error. Check internet connection!");
+        }
+        else
+        {
+            adEnabled = true;
+            internet = true;
+            Debug.Log("There's Internet!");
+        }
     }
 
 
@@ -71,7 +87,12 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
             {
                 Debug.Log("No Ads");
             }
+            if (internet)
+            {
+                GameObject.Find("ClaimAdPopUp").SetActive(true);
+            }
         }
+        
     }
     public void ShowBanner()
     {
