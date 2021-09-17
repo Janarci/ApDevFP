@@ -2568,6 +2568,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -2579,6 +2583,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -2595,6 +2603,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -4280,6 +4292,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -5320,6 +5336,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -5555,6 +5575,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -9750,6 +9774,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -9761,6 +9789,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -9777,6 +9809,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -11462,6 +11498,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -12502,6 +12542,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -12737,6 +12781,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -33576,6 +33624,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -33587,6 +33639,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -33603,6 +33659,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -35288,6 +35348,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -36328,6 +36392,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -36564,6 +36632,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -36738,6 +36810,10 @@ PrefabInstance:
       value: 0.858
       objectReference: {fileID: 0}
     - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -36881,6 +36957,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 3.957
       objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -37645,6 +37725,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3698766476098875434, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 3698766476098875434, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -38072,6 +38156,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -14.23
       objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -39608,6 +39696,10 @@ PrefabInstance:
       value: 0.441
       objectReference: {fileID: 0}
     - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -39751,6 +39843,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 8.619
       objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -48763,6 +48859,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3698766476098875434, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 3698766476098875434, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -49190,6 +49290,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -6.51
       objectReference: {fileID: 0}
+    - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 8233662250898728745, guid: 4ec58bf1487540c4283153b5744265b0, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -53016,6 +53120,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 5106712761611170012, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
       objectReference: {fileID: 0}
@@ -53031,6 +53139,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5451348776257816693, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
@@ -53051,6 +53163,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 5634261460460708019, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
@@ -54740,6 +54856,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 6573224778268994270, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
       objectReference: {fileID: 0}
@@ -55784,6 +55904,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 7350770502772311922, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
       objectReference: {fileID: 0}
@@ -56023,6 +56147,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 9136138488072340320, guid: a9532ea5d0dc4bc4392c89d6806bce49, type: 3}
       propertyPath: isBossSpawner
       value: 0
@@ -58803,6 +58931,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 1898770861536331371, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -58946,6 +59078,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 3256955697811869549, guid: f69a52ccb22b99143a3883a470184cda, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -59470,6 +59606,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1695828584}
     m_Modifications:
     - target: {fileID: 472188773355792530, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 472188773355792530, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -59482,6 +59622,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 861359433750319163, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 861359433750319163, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -59493,6 +59637,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1036909770946787581, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 1036909770946787581, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
@@ -59542,6 +59690,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 695379266}
     - target: {fileID: 1975941276494852752, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 1975941276494852752, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -59554,6 +59706,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2760728358742187836, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 2760728358742187836, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -59566,6 +59722,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4510681098771405614, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 4510681098771405614, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 
       objectReference: {fileID: 0}
@@ -59577,6 +59737,10 @@ PrefabInstance:
       propertyPath: fairyTemplate3
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6225318843029527167, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: levelHandler
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
     - target: {fileID: 6225318843029527167, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: fairyTemplate1
       value: 

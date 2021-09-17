@@ -18,6 +18,7 @@ public class SpawnManager : MonoBehaviour
     public float BOSS_INTERVAL1 = 20.0f;    
 
     public AssetBundleManager assetManager;
+    public LevelHandler levelHandler;
     //public bool roundStart = false;
     private void Awake()
     {
@@ -54,20 +55,20 @@ public class SpawnManager : MonoBehaviour
         //{
         INIT_TIME += Time.deltaTime;
 
-            if (FindObjectOfType<LevelHandler>().level == 1)
+            if (levelHandler.level == 1)
             {
-                SPAWN_INTERVAL = 16.0f;
-                BOSS_INTERVAL1 = 20.0f;
+                SPAWN_INTERVAL = 17.0f;
+                BOSS_INTERVAL1 = 40.0f;
             }
-            else if (FindObjectOfType<LevelHandler>().level == 2)
+            else if (levelHandler.level == 2)
             {
-                SPAWN_INTERVAL = 14.0f;
-                BOSS_INTERVAL1 = 18.5f;
+                SPAWN_INTERVAL = 15.0f;
+                BOSS_INTERVAL1 = 36.5f;
             }
-            else if (FindObjectOfType<LevelHandler>().level == 3)
+            else if (levelHandler.level == 3)
             {
-                SPAWN_INTERVAL = 9.5f;
-                BOSS_INTERVAL1 = 15.0f;
+                SPAWN_INTERVAL = 10.5f;
+                BOSS_INTERVAL1 = 25.0f;
             }
 
         if (isBossSpawner == true)
@@ -125,6 +126,10 @@ public class SpawnManager : MonoBehaviour
             fairyClone = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, this.fairyTemplate1.transform.rotation, this.transform);
             fairyClone.GetComponentInChildren<Renderer>().material = fairymat1;
             fairyClone.GetComponent<NavMeshAgent>().speed = 1.1f;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
         else if (fairyType == 2)
@@ -133,6 +138,10 @@ public class SpawnManager : MonoBehaviour
             fairyClone = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, this.fairyTemplate2.transform.rotation, this.transform);
             fairyClone.GetComponentInChildren<Renderer>().material = fairymat2;
             fairyClone.GetComponent<NavMeshAgent>().speed = 1.1f;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
         else if (fairyType == 3)
@@ -141,6 +150,10 @@ public class SpawnManager : MonoBehaviour
             fairyClone = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, this.fairyTemplate3.transform.rotation, this.transform);
             fairyClone.GetComponentInChildren<Renderer>().material = fairymat3;
             fairyClone.GetComponent<NavMeshAgent>().speed = 1.1f;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
         
@@ -160,6 +173,10 @@ public class SpawnManager : MonoBehaviour
         {
             fairyClone = GameObject.Instantiate(this.fairyTemplate1, spawnPosition, this.fairyTemplate1.transform.rotation);
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
         else if (fairyType == 2)
@@ -167,6 +184,10 @@ public class SpawnManager : MonoBehaviour
 
             fairyClone = GameObject.Instantiate(this.fairyTemplate2, spawnPosition, this.fairyTemplate2.transform.rotation);
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
         else if (fairyType == 3)
@@ -174,6 +195,10 @@ public class SpawnManager : MonoBehaviour
 
             fairyClone = GameObject.Instantiate(this.fairyTemplate3, spawnPosition, this.fairyTemplate3.transform.rotation);
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
+            if (levelHandler.level == 3)
+            {
+                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+            }
             fairyClone.SetActive(true);
         }
 
