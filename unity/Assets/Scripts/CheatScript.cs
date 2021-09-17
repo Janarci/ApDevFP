@@ -72,6 +72,11 @@ public class CheatScript : MonoBehaviour
         return infMoney;
     }
 
-    
+    public void resetCheat()
+    {
+        infHealth = false;
+        infMana = false;
+
+    }
 
 }

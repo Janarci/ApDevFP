@@ -10,8 +10,13 @@ public class LoseMenu : MonoBehaviour
 	public Text playerScore;
 	public Text playerMsg;
 	private float INIT_TIME = 0;
+	[SerializeField] private CheatScript cheatscript;
 
-    private void Update()
+	private void Start()
+	{
+		cheatscript.resetCheat();
+	}
+	private void Update()
     {
 		INIT_TIME += Time.deltaTime;
 		playerName.text = FindObjectOfType<WebHandlerScript>().currentPlayerName;

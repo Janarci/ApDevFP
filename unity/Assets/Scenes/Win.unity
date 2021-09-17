@@ -1905,6 +1905,7 @@ MonoBehaviour:
   playerName: {fileID: 1918929062}
   playerScore: {fileID: 915338997}
   playerMsg: {fileID: 668037305}
+  cheatscript: {fileID: 3975335401721623048, guid: 9a519535c2359f44b995ca4562f7eea8, type: 3}
 --- !u!1 &1155873440
 GameObject:
   m_ObjectHideFlags: 0
