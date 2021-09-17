@@ -1906,6 +1906,7 @@ MonoBehaviour:
   playerScore: {fileID: 915338997}
   playerMsg: {fileID: 668037305}
   leaderboardsButton: {fileID: 638321292}
+  levelHandler: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
   cheatscript: {fileID: 3975335401721623048, guid: 9a519535c2359f44b995ca4562f7eea8, type: 3}
 --- !u!1 &1155873440
 GameObject:

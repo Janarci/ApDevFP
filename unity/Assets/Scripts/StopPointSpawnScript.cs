@@ -103,16 +103,13 @@ public class StopPointSpawnScript : MonoBehaviour
                     triggerOnce = false;
                     Destroy(this);
                     FindObjectOfType<BGMhandler>().setCurrentSound("Idle");
+                    if (unlockLevel.isCheating == false)
+                    {
+                        unlockLevel.checkLevels();
+                    }
+                    unlockLevel.levelWin = true;
                     SceneManager.LoadSceneAsync("Win");
-                    if (FindObjectOfType<LevelHandler>().level == 1 && FindObjectOfType<LevelHandler>().isCheating == false)
-                    {
-                        FindObjectOfType<LevelHandler>().checkLevels();
-                    }
-                    else if (FindObjectOfType<LevelHandler>().level == 2 && FindObjectOfType<LevelHandler>().isCheating == false)
-                    {
-                        FindObjectOfType<LevelHandler>().checkLevels();
-                    }
-                    FindObjectOfType<LevelHandler>().levelWin = true;
+                    
                 }
             }
             else if (pathingManager.pathTypeList[pathingManager.currentLocation] == PathingScript.pathType.SHOP)

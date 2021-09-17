@@ -35,19 +35,19 @@ public class MainMenuScript : MonoBehaviour
 	public void onEzPress()
 	{
 		unlockLevels.level = 1;
-		FindObjectOfType<LevelHandler>().isCheating = false;
+		unlockLevels.isCheating = false;
 		SceneManager.LoadSceneAsync("EzMap");
 	}
 	public void onMidPress()
 	{
 		unlockLevels.level = 2;
-		FindObjectOfType<LevelHandler>().isCheating = false;
+		unlockLevels.isCheating = false;
 		SceneManager.LoadSceneAsync("AverageMap");
 	}
 	public void onHardPress()
 	{
 		unlockLevels.level = 3;
-		FindObjectOfType<LevelHandler>().isCheating = false;
+		unlockLevels.isCheating = false;
 		SceneManager.LoadSceneAsync("HardMap");
 	}
 	public void MidMapToggle(bool value)
@@ -76,7 +76,7 @@ public class MainMenuScript : MonoBehaviour
 	}
 	public void newScene()
 	{
-		FindObjectOfType<LevelHandler>().isCheating = true;
+		unlockLevels.isCheating = true;
 		SceneManager.LoadSceneAsync(sceneName);
 
 	}

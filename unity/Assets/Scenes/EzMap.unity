@@ -59534,6 +59534,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1633463861}
     - target: {fileID: 1126696955235242140, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
+      propertyPath: unlockLevel
+      value: 
+      objectReference: {fileID: 8901046950835800971, guid: 61bd876bd5207d440a16b18405574e80, type: 3}
+    - target: {fileID: 1126696955235242140, guid: fa0c830d4106de1438b3f66a2b3abf53, type: 3}
       propertyPath: pathingManager
       value: 
       objectReference: {fileID: 695379266}

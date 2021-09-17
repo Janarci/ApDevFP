@@ -11,6 +11,7 @@ public class LoseMenu : MonoBehaviour
 	public Text playerMsg;
 	public Button leaderboardsButton;
 	private float INIT_TIME = 0;
+	public LevelHandler levelHandler;
 	[SerializeField] private CheatScript cheatscript;
 
 	private void Start()
@@ -24,15 +25,15 @@ public class LoseMenu : MonoBehaviour
 		playerScore.text = "Score Obtained: " + FindObjectOfType<WebHandlerScript>().currentPlayerScore.ToString();
 
 		
-		if (FindObjectOfType<LevelHandler>().levelWin == true)
+		if (levelHandler.levelWin == true)
         {
 			if (INIT_TIME <= 5.0f)
 			{
-				if (FindObjectOfType<LevelHandler>().level == 1)
+				if (levelHandler.level == 1)
 				{
 					playerMsg.text = "Average Level Unlocked!";
 				}
-				else if (FindObjectOfType<LevelHandler>().level == 2)
+				else if (levelHandler.level == 2)
 				{
 					playerMsg.text = "Hard Level Unlocked!";
 				}
@@ -70,15 +71,15 @@ public class LoseMenu : MonoBehaviour
     public void onRestartPress()
 	{
 		AssetBundle.UnloadAllAssetBundles(true);
-		if (FindObjectOfType<LevelHandler>().level == 1)
+		if (levelHandler.level == 1)
 		{
 			SceneManager.LoadSceneAsync("EzMap");
 		}
-		else if (FindObjectOfType<LevelHandler>().level == 2)
+		else if (levelHandler.level == 2)
 		{
 			SceneManager.LoadSceneAsync("MidMap");
 		}
-		else if (FindObjectOfType<LevelHandler>().level == 3)
+		else if (levelHandler.level == 3)
 		{
 			SceneManager.LoadSceneAsync("HardMap");
 		}
