@@ -8,6 +8,7 @@ public class fairyAnim : MonoBehaviour
     [SerializeField] private Animation anim;
     private HealthHandler damage;
     private Transform player;
+    private AudioSource deathSfx;
     private bool reachAgent = false;
     private bool isDead = false;
     Transform interactionTransform;
@@ -19,7 +20,7 @@ public class fairyAnim : MonoBehaviour
 	{
         player = GameObject.Find("Player").GetComponent<Transform>();
         damage = GameObject.Find("HealthManager").GetComponent<HealthHandler>();
-
+        deathSfx = this.gameObject.GetComponent<AudioSource>();
     }
 
     void Start()
@@ -63,6 +64,7 @@ public class fairyAnim : MonoBehaviour
     {
         agent.Stop();
         this.isDead = true;
+        deathSfx.Play();
         this.anim.Play("Death");
         StopAllCoroutines();
         Debug.Log("Dead anime played");
