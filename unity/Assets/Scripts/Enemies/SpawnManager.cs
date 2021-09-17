@@ -175,7 +175,7 @@ public class SpawnManager : MonoBehaviour
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
             if (levelHandler.level == 3)
             {
-                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+                fairyClone.GetComponent<NavMeshAgent>().speed = 2.8f;
             }
             fairyClone.SetActive(true);
         }
@@ -186,7 +186,7 @@ public class SpawnManager : MonoBehaviour
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
             if (levelHandler.level == 3)
             {
-                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+                fairyClone.GetComponent<NavMeshAgent>().speed = 2.8f;
             }
             fairyClone.SetActive(true);
         }
@@ -197,7 +197,7 @@ public class SpawnManager : MonoBehaviour
             fairyClone.GetComponent<NavMeshAgent>().speed = 2;
             if (levelHandler.level == 3)
             {
-                fairyClone.GetComponent<NavMeshAgent>().speed = 1.8f;
+                fairyClone.GetComponent<NavMeshAgent>().speed = 2.8f;
             }
             fairyClone.SetActive(true);
         }
