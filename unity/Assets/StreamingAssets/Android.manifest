@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2947365045
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: mobs
+      Dependencies: {}
+    Info_1:
+      Name: paths
+      Dependencies: {}

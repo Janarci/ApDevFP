@@ -1,0 +1,70 @@
+ManifestFileVersion: 0
+CRC: 56389446
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fe2f7dd7b95a6baafffd2760d24b24c2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dedf4b126741d3dfb8196718b5cc68f1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0adeff91fad65fb408b8c26f2c40fb68, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 274f0fe77fe0a954296ea85ec110bdfb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 09212cabb72f11149a3b89ac47fc9369, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 143
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Assets/DragonBoss.prefab
+- Assets/_Assets/DragonBoss3.prefab
+- Assets/_Assets/Fairy2.prefab
+- Assets/_Assets/Fairy3.prefab
+- Assets/_Assets/Fairy1.prefab
+- Assets/_Assets/DragonBoss2.prefab
+Dependencies: []
