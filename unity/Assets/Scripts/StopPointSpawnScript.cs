@@ -106,11 +106,11 @@ public class StopPointSpawnScript : MonoBehaviour
                     SceneManager.LoadSceneAsync("Win");
                     if (FindObjectOfType<LevelHandler>().level == 1 && FindObjectOfType<LevelHandler>().isCheating == false)
                     {
-                        FindObjectOfType<LevelHandler>().EzDone();
+                        FindObjectOfType<LevelHandler>().checkLevels();
                     }
                     else if (FindObjectOfType<LevelHandler>().level == 2 && FindObjectOfType<LevelHandler>().isCheating == false)
                     {
-                        FindObjectOfType<LevelHandler>().MidDone();
+                        FindObjectOfType<LevelHandler>().checkLevels();
                     }
                     FindObjectOfType<LevelHandler>().levelWin = true;
                 }

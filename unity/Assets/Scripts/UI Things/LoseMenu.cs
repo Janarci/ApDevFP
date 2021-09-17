@@ -36,6 +36,10 @@ public class LoseMenu : MonoBehaviour
 				{
 					playerMsg.text = "Hard Level Unlocked!";
 				}
+				else
+				{
+					playerMsg.text = "Congratulations!";
+				}
 			}
 			else
 			{
