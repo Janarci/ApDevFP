@@ -8,6 +8,7 @@ public class DragonPathfind : MonoBehaviour
 
     private Transform player;
     private HealthHandler damage;
+    private AudioSource deathSfx;
 
     public float attackRadius = 3f;
     Transform interactionTransform;
@@ -21,10 +22,12 @@ public class DragonPathfind : MonoBehaviour
 	{
         player = GameObject.Find("Player").GetComponent<Transform>();
         damage = GameObject.Find("HealthManager").GetComponent<HealthHandler>();
+        deathSfx = this.gameObject.GetComponent<AudioSource>();
+
     }
 
-	// Start is called before the first frame update
-	void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         interactionTransform = this.gameObject.transform;
         agent = this.GetComponent<NavMeshAgent>();
@@ -71,7 +74,8 @@ public class DragonPathfind : MonoBehaviour
     }
     public void animDead()
     {
-        Debug.Log("works");
+        deathSfx.Play();
+
         animator.SetBool("Die", true);
         agent.isStopped = true;
         this.isDead = true;
